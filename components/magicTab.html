@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>顶部选项卡 切换动画</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components/fn_tab.css">
+    <script type="text/javascript" src="../assets/js/common/vendor.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/iScroll/5.2.0/iscroll-lite.js"></script>
+
+</head>
+<body>
+<div class="outbox">
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>选项卡</h1>
+    </div>
+    <!--]] 导航-->
+    <!--评价tab切 [[-->
+    <div class="sn-tab comment-tab pr">
+        <div class="tab-wrapper">
+            <ul class="sn-tab-nav wbox">
+                <li class="current total">
+                    <span>全部评价</span>
+                    <p class="current"></p>
+                </li>
+                <li class="good">
+                    <span>好评</span>
+                    <p></p>
+                </li>
+                <li class="normal">
+                    <span>中评</span>
+                    <p></p>
+                </li>
+                <li class="bad">
+                    <span>差评</span>
+                    <p></p>
+                </li>
+                <li class="pic">
+                    <span>有图</span>
+                    <p></p>
+                </li>
+                <li class="again">
+                    <span>追评</span>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
+        <div class="sn-tab-content wbox">
+            <!--全部评价 [[-->
+            <div class="sn-tab-box wbox-flex">
+                <div class="sn-comment-box pr">
+                    <span class="number">100</span>
+                    <span class="rate">全部评价</span>
+                </div>
+            </div>
+            <!--]] 全部评价-->
+            <!--好评 [[-->
+            <div class="sn-tab-box wbox-flex">
+                <div class="sn-comment-box pr">
+                    <span class="number">100</span>
+                    <span class="rate">好评</span>
+                </div>
+            </div>
+            <!--]] 好评-->
+            <!--中评 [[-->
+            <div class="sn-tab-box wbox-flex">
+                <div class="sn-comment-box pr">
+                    <span class="number">100</span>
+                    <span class="rate">中评</span>
+                </div>
+            </div>
+            <!--中评 [[-->
+            <!--差评 [[-->
+            <div class="sn-tab-box wbox-flex">
+                <div class="sn-comment-box pr">
+                    <span class="number">100</span>
+                    <span class="rate">差评</span>
+                </div>
+            </div>
+            <!--差评 [[-->
+            <!--有图 [[-->
+            <div class="sn-tab-box wbox-flex">
+                <div class="sn-comment-box pr">
+                    <span class="number">100</span>
+                    <span class="rate">有图</span>
+                </div>
+            </div>
+            <!--有图 [[-->
+            <!--追评 [[-->
+            <div class="sn-tab-box wbox-flex">
+                <div class="sn-comment-box pr">
+                    <span class="number">100</span>
+                    <span class="rate">追评</span>
+                </div>
+            </div>
+            <!--追评 [[-->
+        </div>
+    </div>
+    <!-- ]] 评价tab切-->
+</div>
+
+<script type="text/javascript">
+
+    var cmt = cmt || {};
+
+    $(".sn-tab-content").width($(".sn-tab-nav").find("li").length * 100 + "%");
+
+    $(".sn-tab-nav").find("li").on("click", function(){
+        var index = $(this).index();
+        $(this).addClass("current").siblings().removeClass("current");
+        $(this).find("p").addClass("current").parents().siblings().find("p").removeClass("current");
+        var width = $(".sn-tab-content").find(".sn-tab-box").width();
+
+        if($(this).is(':first-child')){
+            cmt.tabScroll.scrollTo(0, 0);
+        }else if($(this).is(':last-child')){
+            cmt.tabScroll.scrollTo(window.innerWidth - cmt.tabScroll.scrollerWidth, 0);
+        }
+
+        //设置每一项的高度  除当前项，其他项高度都设为0，避免影响展示项的高度适应。
+        $('.sn-tab-box').eq(index).css('height', 'auto').siblings().css({
+            'height':0
+        });
+
+        $(".sn-tab-content").css({
+            "-webkit-transform": "translate(" + (-width*index) + "px, 0px) translateZ(0px)"
+        });
+
+    });
+    cmt.tabScroll = new IScroll('.tab-wrapper', {scrollX: true, scrollY: false, click: true, bounce: false});
+</script>
+
+
+</body>
+</html>

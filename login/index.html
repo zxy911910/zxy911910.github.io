@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>飞牛网-登录</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login/login.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+<!-- 账号密码登录 -->
+<div class="outbox">
+    <!--头部-->
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>登录注册</h1>
+        <span class="right"><a class="aRegister">游客看看</a></span>
+    </div>
+    <!--e路发-->
+    <div class="head">
+        <img src="../../assets/images/b2b/erode_03.png" alt="">
+    </div>
+    <!--账号 密码-->
+    <div class="login_box">
+        <!-- 登陆输入框 -->
+        <div class="wrapper">
+            <div class="reg_box">
+                <ul>
+                    <li>
+                        <em>账号</em>
+                        <input type="text" placeholder="请输入手机号码">
+                        <span class="iconfont close hide_it">&#xe66a;</span>
+                    </li>
+                    <li>
+                        <em>密码</em>
+                        <input type="password" placeholder="请输入密码">
+                        <!--  可见时为  &#xe681; -->
+                        <span class="iconfont eye">&#xe6b5;</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_box">
+                <p id="accountLoginButton" class="btn btn_red">登 录</p>
+            </div>
+        </div>
+        <div class="divFormat" id="anotherButton">
+            <p><a class="aForget" href="javasxript:;">新用户注册</a></p>
+            <a class="right" id="backTogglePage">忘记密码</a>
+        </div>
+    </div>
+</div>
+<!--弹出层-->
+<div class="b2b_mask hide_it">
+    <div class="txt">
+        <p class="tishi">提示</p>
+        <div class="info">
+            <p>无法登陆无法登陆无法登陆无法登陆无法登陆无法登陆</p>
+            <p class="tel">业代电话: 18000000000</p>
+        </div>
+        <p class="confirm">确认</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+/* CSS Document */
+/* CSS Document */
+.top_box .tab_nav {
+  right: .2rem;
+  top: 50%;
+  position: absolute;
+  margin-top: -0.12rem;
+}

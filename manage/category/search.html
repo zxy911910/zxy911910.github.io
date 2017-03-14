@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>搜索页</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/category/search.css">
+    <script src="../../assets/lib/iscroll.js"></script>
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+</head>
+<body>
+<div class="outbox fn-search">
+    <div class="b2b_title">
+    <div>
+        <img src="../../assets/images/b2b/top_logo.png">
+    </div>
+    <span class="store">大润发闸北店</span>
+</div>
+    <div class="search">
+    <div class="search-address">
+        <p class="back"><span class="iconfont"></span></p>
+        <form class="search-box" method="post" action="">
+            <span class="iconfont">&#xe67b;</span><input type="search" placeholder="请输入" class="text"><span class="cancle iconfont">&#xe66a;</span><input type="submit" class="hide_it">
+        </form>
+        <p class="cart"><span class="iconfont carticon">&#xe659;</span><span class="num">12</span></p>
+    </div>
+    <ul class="search-list hide">
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+    </ul>
+</div>
+    <div class="search-off">
+    <div>
+        <img src="../../assets/images/b2b/nofound.png">
+    </div>
+    <p>抱歉，没有找到相应商品</p>
+    <p class="button">去逛逛</p>
+</div>
+</div>
+</body>
+</html>

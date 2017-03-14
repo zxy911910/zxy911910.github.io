@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>订单详情</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/order/order_detail.css">
+</head>
+<body>
+    <div class="fn_b2b_order_detail outbox">
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>订单详情</h1>
+        </div>
+        <div class="order_shorthand">
+            <p>交易序列号:<span>210164cp08973301</span></p>
+            <p class="order_state">待出货</p>
+        </div>
+        <div class="order_detail">
+            <h3>订单信息</h3>
+            <ul class="order_progress">
+                <li>
+                    <p class="progress_date">07-15</p>
+                    <p class="progress_time">09:35</p>
+                    <p class="progress_dot"></p>
+                    <p class="progress_state">下单</p>
+                </li>
+                <li class="active">
+                    <p class="progress_date">07-15</p>
+                    <p class="progress_time">09:35</p>
+                    <p class="progress_dot"></p>
+                    <p class="progress_state">下单</p>
+                </li>
+                <li class="complete ">
+                    <p class="progress_date">07-15</p>
+                    <p class="progress_time">09:35</p>
+                    <p class="progress_dot"></p>
+                    <p class="progress_state">下单</p>
+                </li>
+                <li class="complete ">
+                    <p class="progress_date">07-15</p>
+                    <p class="progress_time">09:35</p>
+                    <p class="progress_dot"></p>
+                    <p class="progress_state">下单</p>
+                </li>
+                <li class="complete ">
+                    <p class="progress_date">07-15</p>
+                    <p class="progress_time">09:35</p>
+                    <p class="progress_dot"></p>
+                    <p class="progress_state">下单</p>
+                </li>
+            </ul>
+            <ul class="order_info">
+                <li>
+                    <p>收货地址</p>
+                    <p>上海大宁德必易按时打卡活动空间撒谎快点哈卡活动卡活动卡好看的哈看的哈开会的卡号的卡号大红的卡上园</p>
+                </li>
+                <li>
+                    <p>收货人</p>
+                    <p>妮妮</p>
+                </li>
+                <li>
+                    <p>订单金额</p>
+                    <p class="price"><span>&yen;</span>1900<b>.00</b></p>
+                </li>
+                <li>
+                    <p>支付方式</p>
+                    <p>支付宝</p>
+                </li>
+                <li>
+                    <p>支付金额</p>
+                    <p class="price"><span>&yen;</span>1900<b>.00</b></p>
+                </li>
+            </ul>
+        </div>
+        <div class="order_goods">
+            <ul class="order_goods_list">
+                <li>
+                    <div class="order_goods_pic">
+                        <img src="http://ued.dev.fn.com:8080/imgx/120x120/000/fff.png">
+                    </div>
+                    <div class="order_goods_info">
+                        <div class="order_name">
+                            <p class="goods_name"><span>SHA</span>三文鱼刺身50g挪威进口海鲜生鱼片</p>
+                            <p class="price"><span>&yen;</span>78<b>.00</b></p>
+                        </div>
+                        <p class="goods_norms">规格:干货</p>
+                        <div class="goods_detail">
+                            <p>订购数量:<span>1</span></p>
+                            <p>出货数:<span>1</span></p>
+                            <p>烟火数:<span>1</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="order_goods_pic">
+                        <img src="http://ued.dev.fn.com:8080/imgx/120x120/000/fff.png">
+                    </div>
+                    <div class="order_goods_info">
+                        <div class="order_name">
+                            <p class="goods_name"><span>SHA</span>三文鱼刺身50g挪威进口海鲜生鱼片</p>
+                            <p class="price"><span>&yen;</span>78<b>.00</b></p>
+                        </div>
+                        <p class="goods_norms">规格:干货</p>
+                        <div class="goods_detail">
+                            <p>订购数量:<span>1</span></p>
+                            <p>出货数:<span>1</span></p>
+                            <p>烟火数:<span>1</span></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

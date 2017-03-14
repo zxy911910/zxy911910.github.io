@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>修改联系电话</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/manage/my/modify_tel.css">
+    <script src="../../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <!--修改联系电话-->
+    <div class="outbox">
+        <!--头部-->
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>修改联系电话</h1>
+        </div>
+        <p class="prompt">请输入您的手机号并点击获取短信验证码</p>
+        <div class="fn-modify">
+            <ul class="reg_box">
+                <li>
+                    <span>手机号</span>
+                    <input class="tel" type="text" placeholder="请输入手机号">
+                    <!--变灰色 加 .die-->
+                    <span class="yzm">获取验证码</span>
+                </li>
+                <li>
+                    <span>短信验证码</span>
+                    <input type="text" placeholder="请输入收到的短信验证码">
+                </li>
+            </ul>
+        </div>
+        <div class="next_btn btn_de">
+            <a href="javascript:;">下一步</a>
+        </div>
+    </div>
+    <!-- 验证码弹窗 -->
+    <div class="b2b_mask hide_it">
+        <div class="txt grap_yzm">
+            <p class="text">请输入图形验证码</p>
+            <div class="grap">
+                <img class="yzm_img" id="verify" src="https://reg.m.feiniu.com/patcha/image2?t=1487051094044">
+                <img src="https://st02.fn-mart.com/statics/static/img/v2/my/cards/icon_spin.png" class="yzm_change">
+            </div>
+            <input type="text"/>
+            <p class="con">
+                <span>取消</span>
+                <span>确定</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

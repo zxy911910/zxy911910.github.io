@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>我的账户</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/manage/my/index.css">
+    <script src="../../assets/js/common/vendor.js"></script>
+</head>
+<body>
+<div class="outbox fn_b2b_my">
+    <div class="my_zone">
+        <div class="my_pic">
+            <img src="../../assets/images/my/defaulthead.png">
+        </div>
+        <p class="hide">阿尼小吃店</p>
+        <p class="my_enter">
+            <span>登录</span><span>注册</span>
+        </p>
+        <p class="setting ">注销</p>
+    </div>
+    <div class="my_charge_info">
+        <h3>个人信息</h3>
+        <ul class="my_list">
+            <li>
+                <p>姓名</p>
+                <p>苏博宇</p>
+            </li>
+            <li>
+                <p>邀请码</p>
+                <p>093752</p>
+            </li>
+            <li>
+                <p>联系电话</p>
+                <p>1342746281<span class="iconfont go">&#xe60b;</span></p>
+            </li>
+            <li>
+                <p>对应门店</p>
+                <p>上海闸北店</p>
+            </li>
+        </ul>
+    </div>
+    <div class="fast-bottom-nav">
+    <div class="nav-box">
+        <div class="active">
+            <P class="iconfont">&#xe652;</P>
+            <p>商品分类</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe686;</P>
+            <p>商户</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>订单</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>我的账户</p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

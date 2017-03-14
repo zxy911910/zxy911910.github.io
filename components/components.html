@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>飞牛网-Components</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/no_common/components/password_onoff.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+
+<body>
+    <div class="outbox">
+        <!-- 顶部 -->
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>密码输入框</h1>
+        </div>
+        <!-- 密码显示隐藏 -->
+        <ul>
+            <li class="password">
+                <label>支付密码：</label>
+                <input type="password" id="passwordId" name="password" placeholder="请输入密码">
+                <input type="checkbox" value="" class="J_inv_onoff inv_onoff">
+            </li>
+        </ul>
+        <!-- 顶部 -->
+        <script type="text/javascript">
+            $(".inv_onoff").click(function() {
+                var inputType = $(this).prop("checked") ? 'text' : 'password';
+                $("#passwordId").attr("type", inputType);
+            })
+        </script>
+    </div>
+</body>
+
+</html>

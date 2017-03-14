@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>飞牛网-底部导航</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="../static/css/v2/common.css" />
+<script src="../static/js/v2/zepto.min.js"></script>
+<script src="../static/js/v2/common.js"></script>
+</head>
+<body>
+
+<div class="outbox">
+	
+	<!-- 顶部 -->
+	<div class="top_box">
+		<span class="top_back"></span>
+		<h1>底部导航</h1>
+	</div>
+
+	<!-- 底部导航 start-->
+	<div class="foot_nav" id="footNav">
+		<ul class="clearfix">
+			<li><a href="javascript:;"><em class="b_one"></em><br />首页</a></li>
+			<li><a href="javascript:;"><em class="b_two"></em><br />商品分类</a></li>
+			<li><a href="javascript:;"><em class="b_three" id="J_addCard"><i class="cartnum hide J_navCartNumId"></i></em><br />购物车</a></li>
+			<li><a href="javascript:;"><em class="b_four"></em><br />我的账户</a></li>
+		</ul>
+		<p class="fri" id="hideBtmNav"></p>
+	</div>
+	<p class="bnav_h J_showBtmNav" id="showBtmNav"><em id="navCartNumId" class="hide J_navCartNumId"></em></p>
+
+	<script>
+		//显示隐藏底部菜单
+		$('#showBtmNav').click(function(){
+			$('#footNav').animate({left: 0}, 'fast');
+			$(this).hide();
+		})
+
+		$('#hideBtmNav').click(function(){
+			$('#footNav').animate({left: '-100%'}, 'fast');
+			$('#showBtmNav').show();
+		})
+	</script>
+
+	<!-- 底部导航 end -->
+
+</div>
+
+</body>
+</html>

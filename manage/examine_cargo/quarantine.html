@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>待验货</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/manage/examine_cargo/quarantine.css">
+    <script src="../../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <div class="header_fix outbox">
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>阿尼小吃店</h1>
+            <span class="more">合并验货</span>
+        </div>
+        <div class="tab_header">
+            <p class="active">待验货<span>(3)</span></p>
+            <p>代收款<span>(1)</span></p>
+            <p>门店所有待验货<span></span></p>
+        </div>
+    </div>
+    <div class="mg_quar outbox">
+        <div class="search">
+            <div class="search-address bg_3e">
+                <form class="search-box bg_3f" method="post" action="">
+                    <span class="iconfont">&#xe67b;</span><input type="search" placeholder="请输入" class="text"><span class="cancle iconfont">&#xe66a;</span><input type="submit" class="hide_it">
+                </form>
+            </div>
+        </div>
+        <ul class="quar_serial_number">
+            <li class="serial_number_detail">
+                <div class="quar_number">
+                    <div class="serial_checked">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <div class="choice_checked iconfont"></div>
+                        </div>
+                        <p class="num">交易序列号:<span>128361819311</span></p>
+                    </div>
+                    <div class="quar_detail">
+                        <p class="detail">详情<span class="iconfont">&#xe60b;</span></p>
+                        <p class="quar_check">验货</p>
+                    </div>
+                </div>
+            </li>
+            <li class="serial_number_detail">
+                <div class="quar_number">
+                    <div class="serial_checked">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <div class="choice_checked iconfont"></div>
+                        </div>
+                        <p class="num">交易序列号:<span>128361819311</span></p>
+                    </div>
+                    <div class="quar_detail">
+                        <p class="detail">详情<span class="iconfont">&#xe60b;</span></p>
+                        <p class="quar_check">验货</p>
+                    </div>
+                </div>
+            </li>
+            <li class="serial_number_detail">
+                <div class="quar_number">
+                    <div class="serial_checked">
+                        <div class="choice">
+                            <input type="checkbox">
+                            <div class="choice_checked iconfont"></div>
+                        </div>
+                        <p class="num">交易序列号:<span>128361819311</span></p>
+                    </div>
+                    <div class="quar_detail">
+                        <p class="detail">详情<span class="iconfont">&#xe60b;</span></p>
+                        <p class="quar_check">验货</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="bottom_check outbox">
+        <div class="choice_box">
+            <div class="choice">
+                <input type="checkbox">
+                <div class="choice_checked iconfont"></div>
+            </div>
+            <p class="choice_all">全选</p>
+        </div>
+        <div class="check_detail">
+            <p class="check_num">验货笔数:<span class="num">4</span>笔</p>
+            <p class="check_start">开始验货</p>
+        </div>
+    </div>
+</body>
+</html>

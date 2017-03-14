@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>我的订单</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/manage/my/order/index.css">
+    <script src="../../../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <div class="outbox">
+        <!-- 顶部 -->
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>我的订单</h1>
+        </div>
+        <div class="item-list">
+            <div class="swiper-container">
+                <div class="swiper-wrapper J-tab">
+                    <a class="all_order swiper-slide cur" data-status="0" href="javascript:;">订单概况</a>
+                    <a class="pending_order swiper-slide" data-status="1" href="javascript:;">全部订单</a>
+                    <a class="shipped_order swiper-slide" data-status="2" href="javascript:;">商户订单</a>
+                </div>
+            </div>
+        </div>
+        <div class="main J-main">
+            <div class="content">
+                <!--?searchBar start-->
+                <div class="bar search_box">
+                    <div class="searchbar">
+                        <a class="searchbar-cancel">取消</a>
+                        <span class="searchbar-filter J-searchbar">筛选</span>
+                        <div class="search-input">
+                            <form method="get" id="search_form">
+                                <label class="icon icon-search iconfont" for="search"></label>
+                                <input type="search search_bar" id="search" autocomplete="off" placeholder="搜索交易序列号...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--?searchBar end-->
+
+                <div class="order_list_nav">
+                <ul class="order_box">
+                    <li class="package J_pkHeader">
+                        <p>好运来超市</p>
+                        <p>待出货</p>
+                    </li>
+                    <div>
+                        <div id="slide-201702CP10925460-0" class="J_slide J_preOrderDetail J_mutiple" data-imgnum="8" data-orderid="201702CP10925460" data-ogno="" data-dsno="1" data-group="" style="overflow: hidden;">
+                            <ul class="gl_adc">
+                                <li>
+                                    <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="totalAmounts">
+                            <p>共8件<i class="iconfont"></i></p>
+                        </div>
+                    </div>
+
+                    <li class="order_time clearfix">
+                        <span class="date">2017-01-01 13:90:02</span><span>&yen;:321321</span>
+                    </li>
+                </ul>
+                <!--单个商品列表 S-->
+                <ul class="order_box">
+                    <li class="package J_pkHeader">
+                        <p>好运来超市</p>
+                        <p>待出货</p>
+                    </li>
+                    <div class="J_singleOrderDetail">
+                        <div class="J_Detail">
+                            <ul class="gl_adc">
+                                <li>
+                                    <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="totalAmounts">
+                            <p>共8件共8件共8件共8件共8件共8件共8件共8件共8件共8件共8件共8件</p>
+                        </div>
+                    </div>
+                    <li class="order_time clearfix">
+                        <span class="date">2017-01-01 13:90:02</span><span>&yen;:321321</span>
+                    </li>
+                </ul>
+                <!--单个商品列表 E-->
+                <ul class="order_box">
+                    <li class="package J_pkHeader">
+                        <p>好运来超市</p>
+                        <p>待出货</p>
+                    </li>
+                    <div>
+                        <div class="J_slide J_preOrderDetail J_mutiple" data-imgnum="8" style="overflow: hidden;">
+                            <ul class="gl_adc">
+                                <li>
+                                    <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                </li>
+                                <li>
+                                    <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                </li>
+                                <li>
+                                    <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                </li>
+                                <li>
+                                    <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="totalAmounts line">
+                            <p><i class="iconfont">&#xe61a;</i></p>
+                        </div>
+                    </div>
+
+                    <li class="order_time clearfix">
+                        <span class="date">2017-01-01 13:90:02</span><span>&yen;:321321</span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="content hide_it">
+                <div class="order_list_nav">
+                    <ul class="order_box">
+                        <li class="package J_pkHeader">
+                            <p>好运来超市</p>
+                            <p>待出货</p>
+                        </li>
+                        <div>
+                            <div id="slide-201702CP10925460-0" class="J_slide J_preOrderDetail J_mutiple" data-imgnum="8" data-orderid="201702CP10925460" data-ogno="" data-dsno="1" data-group="" style="overflow: hidden;">
+                                <ul class="gl_adc">
+                                    <li>
+                                        <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="totalAmounts">
+                                <p>共8件<i class="iconfont"></i></p>
+                            </div>
+                        </div>
+
+                        <li class="order_time clearfix">
+                            <span class="date">2017-01-01 13:90:02</span><span>&yen;:321321</span>
+                        </li>
+                    </ul>
+                    <!--单个商品列表 S-->
+                    <ul class="order_box">
+                        <li class="package J_pkHeader">
+                            <p>好运来超市</p>
+                            <p>待出货</p>
+                        </li>
+                        <div class="J_singleOrderDetail">
+                            <div class="J_Detail">
+                                <ul class="gl_adc">
+                                    <li>
+                                        <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="totalAmounts">
+                                <p>共8件共8件共8件共8件共8件共8件共8件共8件共8件共8件共8件共8件</p>
+                            </div>
+                        </div>
+                        <li class="order_time clearfix">
+                            <span class="date">2017-01-01 13:90:02</span><span>&yen;:321321</span>
+                        </li>
+                    </ul>
+                    <!--单个商品列表 E-->
+                    <ul class="order_box">
+                        <li class="package J_pkHeader">
+                            <p>好运来超市</p>
+                            <p>待出货</p>
+                        </li>
+                        <div>
+                            <div class="J_slide J_preOrderDetail J_mutiple" data-imgnum="8" style="overflow: hidden;">
+                                <ul class="gl_adc">
+                                    <li>
+                                        <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                    </li>
+                                    <li>
+                                        <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                    </li>
+                                    <li>
+                                        <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                    </li>
+                                    <li>
+                                        <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="totalAmounts line">
+                                <p><i class="iconfont">&#xe61a;</i></p>
+                            </div>
+                        </div>
+
+                        <li class="order_time clearfix">
+                            <span class="date">2017-01-01 13:90:02</span><span>&yen;:321321</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--商户订单 S-->
+            <div class="content hide_it">
+                <!--?searchBar start-->
+                <div class="bar search_box manage_order">
+                    <div class="searchbar">
+                        <a class="searchbar-cancel">取消</a>
+                        <div class="search-input">
+                            <form method="get">
+                                <label class="icon icon-search iconfont" for="search"></label>
+                                <input type="search search_bar" id="search" autocomplete="off" placeholder="搜索交易序列号...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--?searchBar end-->
+                <ul class="manage_list">
+                  <li>
+                      <p>好运来超市</p>
+                      <p>查看商户订单列表<span class="iconfont">&#xe60b;</span></p>
+                  </li>
+                    <li>
+                        <p>好运来超市</p>
+                        <p>查看商户订单列表<span class="iconfont">&#xe60b;</span></p>
+                    </li>
+                </ul>
+            </div>
+            <!--商户订单 E-->
+        </div>
+        <div class="mask mask-filter hide_it"></div>
+        <!-- 筛选 S -->
+        <div class="order-filter outbox hide_it">
+            <div class="top_box">
+                <span class="top_cancel">取消</span>
+                <h1>筛选</h1>
+            </div>
+            <div class="order_info">
+                <div class="order_status">
+                    <h3>订单状态</h3>
+                    <ul class="clearfix">
+                        <li class="btn_red">待出货</li>
+                        <li>待出货</li>
+                        <li>待出货</li>
+                        <li>待出货</li>
+                        <li>待出货</li>
+                    </ul>
+                </div>
+                <div class="or_time">
+                    <p>下单时间:</p>
+                    <input type="text" placeholder="起">
+                    <span>—</span>
+                    <input type="text" placeholder="止">
+                </div>
+            </div>
+            <div class="choice_btn">
+                <span class="reset">重置</span>
+                <span class="confirm">确定</span>
+            </div>
+        </div>
+        <!-- 筛选 E -->
+        <div class="fast-bottom-nav">
+    <div class="nav-box">
+        <div class="active">
+            <P class="iconfont">&#xe652;</P>
+            <p>商品分类</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe686;</P>
+            <p>商户</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>订单</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>我的账户</p>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+<script>
+    $(function () {
+        $(".J-tab a").on('click',function () {
+            $(this).addClass('cur').siblings().removeClass("cur");
+            $(".J-main > div").eq($(this).index()).removeClass('hide_it').siblings().addClass("hide_it");
+        });
+    })
+</script>
+</html>

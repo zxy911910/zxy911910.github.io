@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>我的订单</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/my/order/index.css">
+    <script src="../../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <div class="outbox">
+        <!-- 顶部 -->
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>我的订单</h1>
+        </div>
+        <div class="item-list">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a class="all_order swiper-slide cur" data-status="0" href="javascript:;">全部订单</a>
+                    <a class="pending_order swiper-slide" data-status="1" href="javascript:;">待出货</a>
+                    <a class="shipped_order swiper-slide" data-status="2" href="javascript:;">已出货</a>
+                    <a class="confirm_order swiper-slide" data-status="4" href="javascript:;">已验货</a>
+                    <a class="can_settlement_order swiper-slide" data-status="5" href="javascript:;">已付款</a>
+                    <a class="billing_order swiper-slide" data-status="9" href="javascript:;">已开票</a>
+                </div>
+            </div>
+        </div>
+
+        <!--?searchBar start-->
+        <div class="bar search_box">
+            <div class="searchbar">
+                <a class="searchbar-cancel">取消</a>
+                <div class="search-input">
+                    <form method="get" id="search_form">
+                        <label class="icon icon-search iconfont" for="search"></label>
+                        <input type="search search_bar" id="search" autocomplete="off" placeholder="搜索交易序列号...">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--?searchBar end-->
+
+        <div class="order_list_nav">
+            <ul class="order_box">
+                <li class="package J_pkHeader">
+                    <p>下单时间:12312321</p>
+                    <p>已验货</p>
+                </li>
+                <div>
+                    <div id="slide-201702CP10925460-0" class="J_slide J_preOrderDetail J_mutiple" data-imgnum="8" data-orderid="201702CP10925460" data-ogno="" data-dsno="1" data-group="" style="overflow: hidden;">
+                        <ul class="gl_adc">
+                            <li>
+                                <div class="gl_img"><img src="//img04.fn-mart.com/C/item/2016/0302/201603C020000773/_385281751_120x120_q75.jpg"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="totalAmounts">
+                        <p>共8件<i class="iconfont"></i></p>
+                    </div>
+                </div>
+
+                <li class="order_time clearfix">
+                    &yen;:321321
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

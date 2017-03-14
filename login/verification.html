@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>飞牛网-登录</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login/verification.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+<!-- 短信验证码 S -->
+<div class="outbox">
+    <!--头部-->
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>短信验证码</h1>
+    </div>
+    <div class="yzm">
+        <span>短信验证码</span>
+        <input type="text" placeholder="请输入您的短信验证码">
+    </div>
+    <div class="next_btn btn_red">
+        <a href="javascript:;">下一步</a>
+    </div>
+    <div class="no_yzm">
+    <h3>收不到验证码?</h3>
+    <p>1、请检查手机垃圾短信，拦截短信等，看是否已屏蔽飞牛短信</p>
+    <p>2、同一手机每日最多获取5次验证码</p>
+    <p>3、若您的手机号已经停用或以上两条都未解决，请拨打<a href="javascript:;">400-920-6565</a>与客服中心联系</p>
+</div>
+</div>
+<!-- 短信验证码 E -->
+</body>
+</html>

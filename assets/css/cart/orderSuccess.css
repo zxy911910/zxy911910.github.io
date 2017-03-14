@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+.b2b_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 66;
+}
+.b2b_mask .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+/***
+ UI 自定义 公共 ued颜色规范
+**/
+.over {
+  overflow: hidden;
+}
+body {
+  position: relative;
+  background: #eee;
+}
+.fn_order_success .order_notice {
+  width: 100%;
+  height: 1.75rem;
+  background: url('../../images/cart/order_success.png') no-repeat 0 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.fn_order_success .order_notice p {
+  color: #fff;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  padding-left: 0.3rem;
+  font-size: 0.32rem;
+}
+.fn_order_success .order_info {
+  background: #fff;
+  padding-left: 0.3rem;
+}
+.fn_order_success .order_info .order_info_detail {
+  position: relative;
+  padding: 0.3rem 0.4rem;
+  border-bottom: 1px solid #d5d5d5;
+}
+.fn_order_success .order_info .order_info_detail::before {
+  content: '\e606';
+  font-family: iconfont!important;
+  display: inline-block;
+  position: absolute;
+  left: -0.25rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.68rem;
+  color: #ddd;
+}
+.fn_order_success .order_info .order_buyer {
+  margin-bottom: 0.2rem;
+}
+.fn_order_success .order_info .order_buyer p {
+  display: inline-block;
+  color: #333333;
+}
+.fn_order_success .order_info .order_buyer_address {
+  color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.fn_order_success .order_info .red {
+  color: #c20053;
+}
+.fn_order_success .order_info .order_price {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  padding-left: 0.4rem;
+  color: #333333;
+}
+.fn_order_success .tabs {
+  padding: 0.2rem 0.6rem 0.3rem 0.6rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.fn_order_success .tabs span {
+  display: inline-block;
+  height: 0.85rem;
+  line-height: 0.85rem;
+  text-align: center;
+  border: 1px solid #999999;
+  border-radius: 0.05rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fn_order_success .tabs :first-child {
+  margin-right: 0.6rem;
+}

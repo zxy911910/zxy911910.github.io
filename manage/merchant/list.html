@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>商户列表</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/manage/merchant/list.css">
+</head>
+<body>
+<div class="mg_list outbox">
+    <div class="top_box">
+        <h1>商户列表</h1>
+    </div>
+    <p class="info-login">亲，赶快去登录/注册才能查看优惠价格哦！<a href="javascript:;">登录/注册</a></p>
+    <div class="search">
+    <div class="search-address">
+        <p class="back"><span class="iconfont"></span></p>
+        <form class="search-box" method="post" action="">
+            <span class="iconfont">&#xe67b;</span><input type="search" placeholder="请输入" class="text"><span class="cancle iconfont">&#xe66a;</span><input type="submit" class="hide_it">
+        </form>
+        <p class="cart"><span class="iconfont carticon">&#xe659;</span><span class="num">12</span></p>
+    </div>
+    <ul class="search-list hide">
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+        <li>
+            <h3>大宁</h3>
+            <p>玉堂街55号</p>
+        </li>
+    </ul>
+</div>
+    <div class="tab_header">
+    <p class="active">待审核<span></span></p>
+    <p>已开启<span></span></p>
+    <p>已关闭<span></span></p>
+    <p>审核拒绝<span></span></p>
+</div>
+    <div class="fast-bottom-nav">
+    <div class="nav-box">
+        <div class="active">
+            <P class="iconfont">&#xe652;</P>
+            <p>商品分类</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe686;</P>
+            <p>商户</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>订单</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>我的账户</p>
+        </div>
+    </div>
+</div>
+    <ul class="merchant_list  merchant_list_check hide_it">
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit active">待审核</p>
+            <p class="tag">新</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit active">待审核</p>
+            <p class="tag">新</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit active">待审核</p>
+            <p class="tag">改</p>
+        </li>
+    </ul>
+    <ul class="merchant_list  merchant_list_open">
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit open">已开启</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit open">已开启</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit open">已开启</p>
+        </li>
+    </ul>
+    <ul class="merchant_list merchant_list_close hide_it">
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <p class="mg_num">内部站点编号:<span>284618</span></p>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit">已关闭</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <p class="mg_num">内部站点编号:<span>284618</span></p>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit">已关闭</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <p class="mg_num">内部站点编号:<span>284618</span></p>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="audit">已关闭</p>
+        </li>
+    </ul>
+    <ul class="merchant_list merchant_list_refuse hide_it">
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="mg_refuse active">*拒绝原因:<span>恶意注册,拒绝申请</span></p>
+            <p class="audit active">审核拒绝</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="mg_refuse active">*拒绝原因:<span>恶意注册,拒绝申请</span></p>
+            <p class="audit active">审核拒绝</p>
+        </li>
+        <li class="mg_list_detail">
+            <h3>余家超市</h3>
+            <P class="mg_people">收货人:<span>苏小宝</span></P>
+            <p class="mg_phone">收货人手机:<span>18019789179</span></p>
+            <p class="mg_refuse active">*拒绝原因:<span>恶意注册,拒绝申请</span></p>
+            <p class="audit active">审核拒绝</p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

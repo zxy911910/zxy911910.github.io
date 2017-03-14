@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>飞牛网-公共加载效果</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="../static/css/v2/common.css" />
+<script src="../static/js/v2/zepto.min.js"></script>
+<script src="../static/js/v2/common.js"></script>
+</head>
+<body>
+
+<div class="outbox">
+	
+	<!-- 顶部 -->
+	<div class="top_box">
+		<span class="top_back"></span>
+		<h1>加载效果</h1>
+	</div>
+
+	<!-- 返回顶部 -->
+	<p class="gotop"></p>
+
+	<!-- 页面滚动时加载 -->
+	<p class="loading_btm"><b></b><i>正在努力加载...</i></p>
+
+	<!-- 兼容UC，QQ浏览器写法（用GIF背景图片） -->
+	<p class="loading_btm"><em></em><i>正在努力加载...</i></p>
+
+	<!-- 页面下放只是文字提示 -->
+	<p class="loading_btm"><i>没有更多商品,跟努力加载的区别是少一个b标签</i></p>
+
+	<!-- 页面遮罩部分加载 -->
+	<p class="loading_pop J_loading_pop" style="display:none;"><b></b></p>
+
+	<!-- 页面遮罩全部加载 -->
+	<p class="loading_pop all J_loading_popall" style="display:none;"><b></b></p>
+
+	<button onclick="$('.J_loading_pop').show()">查看遮罩部分加载</button>
+
+	<button onclick="$('.J_loading_popall').show()">查看遮罩全部加载</button>
+
+	<!-- 兼容UC，QQ浏览器写法（用GIF背景图片） -->
+	<p class="loading_pop J_loading_pop" style="display:none;"><em></em></p>
+
+	<!-- 商品列表-没有更多商品 -->
+	<p class="nomoregoods">
+		<span class="nombor"><i>没有更多商品</i></span>
+	</p>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>飞牛网-修改密码</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login/modifyc_code.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+<!-- 修改密码 S-->
+<div class="outbox modifyc_code">
+    <!--头部-->
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>修改密码</h1>
+    </div>
+    <!--修改密码-->
+    <div class="modifyc">
+        <span>新密码</span>
+        <input type="text" placeholder="请输入您的新密码">
+        <i class="iconfont icon icon_de">&#xe602;</i>
+        <i class="iconfont">&#xe6b5;</i>
+    </div>
+    <div class="next_btn btn_red">
+        <a href="javascript:;">下一步</a>
+    </div>
+</div>
+<!-- 修改密码 E-->
+</body>
+</html>

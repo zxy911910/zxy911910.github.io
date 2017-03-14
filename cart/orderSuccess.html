@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>订单成功</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cart/orderSuccess.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+<div class="outbox fn_order_success">
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>订单完成</h1>
+    </div>
+    <div class="order_notice">
+        <p>您的订单已完成，请等候出货！</p>
+    </div>
+    <div class="order_info">
+            <!--<div class="iconfont order_address_location">&#xe677;</div>-->
+        <div class="order_info_detail">
+            <div class="order_buyer">
+                <p  class="order_buyer_name">陈牛牛</p>
+                <p  class="order_buyer_phone">18516281529</p>
+            </div>
+            <p class="order_buyer_address">上海市闸北区大宁路待道彭江室602号E楼339室路口右拐三楼</p>
+        </div>
+        <p class="order_price">订单金额:<span class="red">&yen;</span><span class="red">303.00</span></p>
+    </div>
+    <div class="tabs">
+        <span class="go_classify">查看分类</span>
+        <span class="go_order_list">订单列表</span>
+    </div>
+</div>
+</body>
+</html>

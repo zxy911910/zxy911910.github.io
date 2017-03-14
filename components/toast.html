@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>飞牛网-吐司通知</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+	<script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+
+<div class="outbox">
+
+	<div class="top_box">
+		<span class="top_back"></span>
+		<h1>吐司通知</h1>
+	</div>
+
+	<div>
+		<button id="toast_button button">通知</button>
+	</div>
+
+</div>
+
+</body>
+<script>
+	$("#toast_button").on("click",function(){
+
+		var msg = "欢迎来到飞牛网...";
+
+		if(msg.length > 10){
+			msg =  msg.substr(0,10) + "...";
+		}
+		if ($('#toast_area').length == 0){
+			var html = '<div class="toast" id="toast_area">' +
+					'<span>' +
+					msg +
+					'</span>' +
+					'</div>';
+			$('body').append(html);
+		}
+
+		$('#toast_area').fadeIn(200, function() {
+			setTimeout(function() {
+				$('#toast_area').fadeOut(200)
+			}, 1000)
+		})
+	})
+</script>
+</html>

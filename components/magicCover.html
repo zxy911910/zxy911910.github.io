@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>弹出层 切换动画</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components/fn_cover.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+<div class="outbox bgeee">
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>弹出层</h1>
+    </div>
+    <div class="btn btn_lg  btn_red" id="cover-btn">从下往上弹出层</div>
+    <div class="btn btn_lg  btn_red" id="righttoleft-btn">从右往左弹出层</div>
+    <div class="fn-cover up" id="category_box" style="display: block;">
+        <header>我是一个弹出层</header>
+        <button class="finish-btn">完成</button>
+    </div>
+    <div class="fn-cover left" id="search_box" style="display: block;">
+        <header>我是一个弹出层</header>
+        <button class="finish-btn">完成</button>
+    </div>
+    <div class="popup_cover"></div>
+</div>
+</body>
+<script>
+    $("#cover-btn").on("click",function(){
+        $(".popup_cover").show();
+        $("#category_box").addClass("upshow");
+    })
+
+    $("#category_box > .finish-btn").on("click",function(){
+        $("#category_box").removeClass("upshow");
+        $(".popup_cover").fadeOut();
+    })
+
+    $("#righttoleft-btn").on("click",function(){
+        $(".popup_cover").show();
+        $("#search_box").addClass("leftshow");
+    })
+
+    $("#search_box > .finish-btn").on("click",function(){
+        $("#search_box").removeClass("leftshow");
+        $(".popup_cover").fadeOut();
+    })
+
+
+
+
+
+
+</script>
+</html>

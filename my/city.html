@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>飞牛网-省份选择</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my/city.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+<!--省份选择-->
+    <div class="outbox fn-city">
+        <!--头部-->
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>省份选择</h1>
+        </div>
+        <div class="choice">
+            <ul>
+                <li class="on">北京<span class="iconfont">&#xe602;</span></li>
+                <li class="">北京<span class="iconfont">&#xe602;</span></li>
+                <li class="">北京<span class="iconfont">&#xe602;</span></li>
+                <li class="">北京<span class="iconfont">&#xe602;</span></li>
+                <li class="">北京<span class="iconfont">&#xe602;</span></li>
+                <li class="">北京<span class="iconfont">&#xe602;</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

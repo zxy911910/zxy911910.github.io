@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>商户详情</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/manage/commercial/edit_commercial.css">
+    <script src="../../assets/lib/iscroll.js"></script>
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+</head>
+<body>
+    <div class="outbox fn-commercial-edit">
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>商户详情</h1>
+            <span class="top-nav">编辑</span>
+        </div>
+        <!--审核拒绝-->
+        <div class="review">审核拒绝!商户注册信息不准确。</div>
+        <!-- 编辑 edit-fn-commercial    编辑完成  end-fn-commercial-->
+        <div class="fn-commercial-delivery end-fn-commercial">
+            <h3 class="fn-commercial-title">配送信息</h3>
+            <ul class="fn-commercial-list">
+                <li>
+                    <p>商户名称</p>
+                    <input type="text" placeholder="商户名称">
+                    <p>余家超市</p>
+                </li>
+                <li>
+                    <p>收货人</p>
+                    <input type="text" placeholder="收货人">
+                    <p>余家超市</p>
+                </li>
+                <li>
+                    <p>收获人手机</p>
+                    <input type="text" placeholder="收货人手机">
+                    <p>余家超市</p>
+                </li>
+                <li>
+                    <p>收货地址</p>
+                    <input type="text" placeholder="请选择收货地址(三级)">
+                    <i class="iconfont">&#xe60b;</i>
+                    <p>余家超市</p>
+                </li>
+                <li>
+                    <p>详细地址</p>
+                    <input type="text" placeholder="详细地址">
+                    <p>余家超市1111</p>
+                </li>
+            </ul>
+        </div>
+        <div class="fn-commercial-commercial edit-fn-commercial">
+            <h3 class="fn-commercial-title">商户信息</h3>
+            <ul class="fn-commercial-list">
+                <li>
+                    <p>商户类型</p>
+                    <input type="text" placeholder="商户类型">
+                    <i class="iconfont">&#xe60b;</i>
+                    <p>商户类型</p>
+                </li>
+                <li>
+                    <p>营业面积</p>
+                    <input type="text" placeholder="营业面积">
+                    <p>营业面积</p>
+                </li>
+                <li>
+                    <p>法人姓名</p>
+                    <input type="text" placeholder="法人姓名">
+                    <p>法人姓名</p>
+                </li>
+                <li>
+                    <p>营业执照号</p>
+                    <input type="text" placeholder="营业执照号">
+                    <p>营业执照号</p>
+                </li>
+                <!-- 变透明 yqm_de -->
+                <!--<li class="yqm yqm_de">-->
+                    <!--<p>邀请码</p>-->
+                    <!--<input type="text" placeholder="请输入邀请码">-->
+                    <!--&lt;!&ndash; 邀请码加 on &ndash;&gt;-->
+                    <!--无邀请码<span class=""></span>-->
+                <!--</li>-->
+            </ul>
+            <div class="fn-commercial-pic">
+                <p class="fn-commercial-title">
+                    商户照片
+                    <span>仅支持仅支持仅支持仅支持仅支持</span>
+                </p>
+                <div class="fn-commercial-pic-info">
+                    <ul>
+                        <li>
+                            <div class="upload">
+                                <input type="file" class="file">
+                                <p class="iconfont">&#xe61f;</p>
+                                <p >点击上传</p>
+                            </div>
+                            <div class="edit hide_it">
+                                <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                                <span>
+                                    <input type="file" class="file">
+                                    <i class="iconfont">&#xe658;</i>
+                                </span>
+                            </div>
+                            <p class="store">商景</p>
+                        </li>
+                        <li>
+                            <div class="upload">
+                                <p class="iconfont">&#xe61f;</p>
+                                <p >点击上传</p>
+                            </div>
+                            <div class="edit hide_it">
+                                <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                                <span><i class="iconfont">&#xe658;</i></span>
+                            </div>
+                            <p class="store">商景</p>
+                        </li>
+                        <li>
+                            <div class="upload hide_it">
+                                <p class="iconfont">&#xe61f;</p>
+                                <p >点击上传</p>
+                            </div>
+                            <div class="edit">
+                                <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                                <span>
+                                    <input type="file" class="file">
+                                    <i class="iconfont">&#xe658;</i>
+                                </span>
+                            </div>
+                            <p class="store">商景</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="b2b_mask fn-store-type">
+<div class="store-type">
+    <div class="choice">
+        <span>取消</span>
+        <span>确定</span>
+    </div>
+    <div class="detail_type">
+        <div class="bus">
+            <h3>批发商户</h3>
+            <ul>
+                <li class="cur">企事业单位</li>
+                <li>企事</li>
+                <li>企事业</li>
+                <li>企事业单</li>
+                <li>企事</li>
+                <li>企事业</li>
+                <li>企事业单</li>
+            </ul>
+        </div>
+        <div class="bus_detail">
+            <ul>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>11</p>
+                </li>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>22</p>
+                </li>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>33</p>
+                </li>
+                <li class="on">
+                    <h4>社区便利店</h4>
+                    <p>44</p>
+                </li>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>55</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+        <!-- 发票信息 S -->
+        <div class="invoice_list">
+            <h3 class="fn-invoice-title">发票信息</h3>
+            <ul class="type_radio">
+                <li>
+                    <p>需要开发票</p>
+                    <div class="invoice">
+                        <p><span class="yes"></span>不开发票</p>
+                        <p><span></span>开发票</p>
+                    </div>
+                </li>
+                <li>
+                    <p>发票类型</p>
+                    <div class="invoice">
+                        <p><span class="yes"></span>增值税发票</p>
+                        <p><span></span>普票</p>
+                    </div>
+                </li>
+                <li>
+                    <p>开票周期</p>
+                    <div class="invoice">
+                        <p><span class="yes"></span>月结</p>
+                        <p><span></span>两周结</p>
+                        <p><span></span>一周结</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="type_txt">
+                <li>
+                    <p>单位名称</p>
+                    <span class="hide_it">123456</span>
+                    <input type="text" placeholder="请输入单位名称">
+                </li>
+                <li>
+                    <p>纳税人识别码</p>
+                    <span class="hide_it">123456</span>
+                    <input type="text" placeholder="纳税人识别码">
+                </li>
+                <li>
+                    <p>注册地址</p>
+                    <span>上海 上海市 闸北区</span>
+                    <input type="text" placeholder="注册地址">
+                </li>
+                <li>
+                    <p>注册电话</p>
+                    <span class="hide_it">131*****382</span>
+                    <input type="text" placeholder="注册电话">
+                </li>
+                <li>
+                    <P>开户银行</P>
+                    <span class="hide_it">浦发银行</span>
+                    <input type="text" placeholder="请输入开户银行">
+                </li>
+                <li>
+                    <p>银行账户</p>
+                    <span class="hide_it">123725199</span>
+                    <input type="text" placeholder="请输入银行账户">
+                </li>
+            </ul>
+        </div>
+        <!-- 发票信息 E -->
+        <p class="submit btn_de">保存</p>
+        <!--审核拒绝  通过按钮-->
+        <div class="btn-review">
+            <span>拒绝</span>
+            <span>审核通过</span>
+        </div>
+    </div>
+    <!-- 省份选择透明层 -->
+    <div class="choice_address hide_it"></div>
+    <!--弹窗-->
+    <div class="mask hide_it"></div>
+    <div class="area_choice_pop hide_it">
+        <h3>选择营业面积</h3>
+        <p class="choice_area"><span class="yes"></span>小于等于100平方米</p>
+        <p class="choice_area"><span></span>大于100平方米</p>
+        <p class="confirm"><span>取消</span><span>确定</span></p>
+    </div>
+</body>
+</html>

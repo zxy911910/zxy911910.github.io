@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cart/cart.css">
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+</head>
+<body>
+    <div class="outbox fn_b2b_cart">
+        <div class="cart_title_box scroll">
+            <div class="top_box">
+            <span class="top_back"></span>
+            <h1>购物车</h1>
+            <span class="more">编辑</span>
+        </div>
+            <!--未登录提示条-->
+            <!--<p class="info-login">亲，赶快去登录/注册才能查看优惠价格哦！<a href="javascript:;">登录/注册</a></p>-->
+            <div class="cart_address">
+                <div class="iconfont cart_address_location">&#xe677;</div>
+                <div class="cart_address_detail">
+                    <div class="cart_buyer">
+                        <p class="cart_buyer_name">陈牛牛</p>
+                        <p class="cart_buyer_phone">18******29</p>
+                    </div>
+                    <p class="cart_buyer_address">
+                        上海市闸北区大宁路待道彭江室602号E楼339室路口右拐三楼
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cart_list cart_list_top">
+            <ul>
+                <li>
+                    <div class="choice">
+                        <input type="checkbox">
+                        <div class="choice_checked iconfont"></div>
+                    </div>
+                    <div class="cart_detail">
+                        <div class="cart_list_detail">
+                            <div class="cart_goods_pic">
+                                <img src="http://ued.dev.fn.com:8080/imgx/160x160/000/fff.png">
+                            </div>
+                            <div class="cart_list_detail_list">
+                                <div class="cart_list_store">
+                                    <p class="cart_store">莫斯利安 保洁公司 连海深海上课的卡萨</p>
+                                    <p class="iconfont delete">&#xe61b;</p>
+                                </div>
+                                <p class="cart_goods_norms"><span>0.5kg | 500ml</span> ,<span>灰色咖啡色混合装</span></p>
+                                <div class="cart_price_num">
+                                    <p class="price"><span>&yen;</span>288<b>.9</b></p>
+                                    <div class="num"><p class="num_subtract">-</p><input type="text" value="2" class="goods_num"><p class="num_add">+</p></div>
+                                </div>
+                                <p class="cart_num">现货数量:<span>35</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="choice">
+                        <input type="checkbox">
+                        <div class="choice_checked iconfont"></div>
+                    </div>
+                    <div class="cart_detail">
+                        <div class="cart_list_detail">
+                            <div class="cart_goods_pic">
+                                <img src="http://ued.dev.fn.com:8080/imgx/160x160/000/fff.png">
+                            </div>
+                            <div class="cart_list_detail_list">
+                                <div class="cart_list_store">
+                                    <p class="cart_store">莫斯利安 保洁公司 </p>
+                                    <p class="iconfont delete">&#xe61b;</p>
+                                </div>
+                                <p class="cart_goods_norms"><span>0.5kg | 500ml</span> ,<span>灰色咖啡色混合装</span></p>
+                                <div class="cart_price_num">
+                                    <p class="price"><span>&yen;</span>288<b>.9</b></p>
+                                    <div class="num"><p class="num_subtract">-</p><input type="text" value="2" class="goods_num"><p class="num_add">+</p></div>
+                                </div>
+                                <p class="cart_num">现货数量:<span>19</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="choice">
+                        <input type="checkbox">
+                        <div class="choice_checked iconfont"></div>
+                    </div>
+                    <div class="cart_detail">
+                        <div class="cart_list_detail">
+                            <div class="cart_goods_pic">
+                                <img src="http://ued.dev.fn.com:8080/imgx/160x160/000/fff.png">
+                            </div>
+                            <div class="cart_list_detail_list">
+                                <div class="cart_list_store">
+                                    <p class="cart_store">莫斯利安 保洁公司 连海深海上课哈肯回答客户贷款撒谎的卡萨</p>
+                                    <p class="iconfont delete">&#xe61b;</p>
+                                </div>
+                                <p class="cart_goods_norms"><span>0.5kg | 500ml</span> ,<span>灰色咖啡色混合装</span></p>
+                                <div class="cart_price_num">
+                                    <p class="price"><span>&yen;</span>288<b>.9</b></p>
+                                    <div class="num"><p class="num_subtract">-</p><input type="text" value="2" class="goods_num"><p class="num_add">+</p></div>
+                                </div>
+                                <p class="cart_num">现货数量:<span>200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="choice">
+                        <input type="checkbox">
+                        <div class="choice_checked iconfont"></div>
+                    </div>
+                    <div class="cart_detail">
+                        <div class="cart_list_detail">
+                            <div class="cart_goods_pic">
+                                <img src="http://ued.dev.fn.com:8080/imgx/160x160/000/fff.png">
+                            </div>
+                            <div class="cart_list_detail_list">
+                                <div class="cart_list_store">
+                                    <p class="cart_store">莫斯利安</p>
+                                    <p class="iconfont delete">&#xe61b;</p>
+                                </div>
+                                <p class="cart_goods_norms"><span>0.5kg | 500ml</span> ,<span>灰色咖啡色混合装</span></p>
+                                <div class="cart_price_num">
+                                    <p class="price"><span>&yen;</span>288<b>.9</b></p>
+                                    <div class="num"><p class="num_subtract">-</p><input type="text" value="2" class="active goods_num" ><p class="num_add">+</p></div>
+                                </div>
+                                <p class="cart_num">现货数量:<span>1</span></p>
+                            </div>
+                        </div>
+                        <p class="order_overnum active">订货数量超过现货数量</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cart_list failure">
+            <h3>失效商品</h3>
+            <ul>
+                <li>
+                    <div class="failure_tag">
+                        失效
+                    </div>
+                    <div class="cart_detail">
+                        <div class="cart_list_detail">
+                            <div class="cart_goods_pic">
+                                <img src="http://ued.dev.fn.com:8080/imgx/160x160/000/fff.png">
+                            </div>
+                            <div class="cart_list_detail_list">
+                                <div class="cart_list_store">
+                                    <p class="cart_store">莫斯利安 保洁公司 连海深海上课哈肯回答客户贷款撒谎的卡萨</p>
+                                    <p class="iconfont delete">&#xe61b;</p>
+                                </div>
+                                <p class="cart_goods_norms"><span>0.5kg | 500ml</span> ,<span>灰色咖啡色混合装</span></p>
+                                <div class="cart_price_num">
+                                    <p class="price"><span>&yen;</span>288<b>.9</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--未找到商品-->
+        <!--<div class="search-off">
+    <div>
+        <img src="../../assets/images/b2b/nofound.png">
+    </div>
+    <p>抱歉，没有找到相应商品</p>
+    <p class="button">去逛逛</p>
+</div>-->
+    </div>
+    <div class="cart_add_all outbox">
+        <div class="add_all">
+            <div class="choice">
+                <input type="checkbox">
+                <div class="choice_checked iconfont"></div>
+            </div>
+            <p>全选</p>
+        </div>
+        <div class="num_all">
+            <p class="num_all_price price">
+                <em>合计:</em><span>&yen;</span>1595<b>.8</b>
+            </p>
+            <div class="submit_order">提交订单<span>(99+)</span></div>
+        </div>
+    </div>
+    <div class="fast-bottom-nav">
+    <div class="nav-box">
+        <div class="active">
+            <P class="iconfont">&#xe652;</P>
+            <p>商品分类</p>
+        </div>
+        <div>
+            <P class="iconfont" style="font-size:0.5rem">&#xe659;</P>
+            <p>购物车</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>我的账户</p>
+        </div>
+    </div>
+</div>
+</body>
+<!--<script>-->
+    <!--$(function(){-->
+        <!--$('.delete').on('click',function(){-->
+            <!--$(this).parents('li').css('display','none');-->
+        <!--});-->
+        <!--$('.num_add').on('click',function(){-->
+            <!--var cartNum=Number($(this).parents('li').find('.cart_num').children('span').html());-->
+            <!--var goodsNum=Number($(this).parent('.num').children('.goods_num').val());-->
+            <!--goodsNum++;-->
+            <!--if(goodsNum>cartNum){-->
+                <!--alert('商品数量大于库存');-->
+                <!--return;-->
+            <!--}-->
+            <!--$(this).parent('.num').children('.goods_num').val(goodsNum);-->
+        <!--});-->
+        <!--$('.num_subtract').on('click',function(){-->
+            <!--var goodsNum=Number($(this).parent('.num').children('.goods_num').val());-->
+            <!--goodsNum&#45;&#45;;-->
+            <!--if(goodsNum<0){-->
+                <!--goodsNum=0;-->
+                <!--alert('商品数量不能小于0')-->
+            <!--}-->
+            <!--$(this).parent('.num').children('.goods_num').val(goodsNum);-->
+        <!--});-->
+    <!--})-->
+<!--</script>-->
+</html>

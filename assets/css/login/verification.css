@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+/* CSS Document */
+.b2b_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 66;
+}
+.b2b_mask .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+/***
+ UI 自定义 公共 ued颜色规范
+**/
+.over {
+  overflow: hidden;
+}
+.no_yzm {
+  margin-top: 0.5rem;
+  padding: 0 .24rem;
+}
+.no_yzm h3 {
+  color: #666;
+  margin-bottom: .2rem;
+  font-size: .24rem;
+}
+.no_yzm p {
+  color: #999;
+  margin-bottom: .14rem;
+  line-height: .32rem;
+  font-size: .24rem;
+  text-indent: -20px;
+  margin-left: 20px;
+}
+.no_yzm p a {
+  color: #06c;
+}
+body {
+  background-color: #EDEEEF;
+}
+.outbox .top_box .right {
+  position: absolute;
+  top: 0;
+  right: .28rem;
+  line-height: .88rem;
+}
+.outbox .top_box .right a {
+  color: #666;
+  font-size: .32rem;
+  text-decoration: none;
+}
+.outbox .yzm {
+  width: 100%;
+  height: .84rem;
+  line-height: .84rem;
+  color: #666;
+  background-color: #fff;
+  margin: 0.3rem 0 0.5rem;
+  padding: 0 .24rem;
+}
+.outbox .yzm span {
+  margin-right: 0.4rem;
+}
+.outbox .yzm input {
+  border: 0;
+}
+.outbox .next_btn {
+  height: 1rem;
+  margin: 0 .24rem;
+  font-size: .36rem;
+  text-align: center;
+  line-height: 1rem;
+  border-radius: .08rem;
+}
+.outbox .next_btn a {
+  color: #fff;
+  font-size: .32rem;
+}
+.outbox .next_btn.btn_de {
+  background-color: #D4D5D6;
+}
+.outbox .next_btn.btn_red {
+  background-color: #D21140;
+}

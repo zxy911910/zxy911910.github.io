@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>开始验货</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/manage/examine_cargo/examing.css">
+    <script src="../../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <div class="outbox">
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>阿尼小吃店</h1>
+            <span class="more">取消</span>
+        </div>
+        <div class="search bg_3e">
+            <div class="search-address">
+                <form class="search-box bg_3f">
+                    <span class="iconfont">&#xe67b;</span><input type="search" placeholder="搜索交易序列号" class="text"><input type="submit" class="hide_it">
+                </form>
+            </div>
+        </div>
+        <ul class="serial_number_list">
+            <li class="serial_num">
+                <div class="choice">
+                    <input type="checkbox">
+                    <div class="choice_checked iconfont"></div>
+                </div>
+                <p>交易序列号:<span>128361819311</span></p>
+            </li>
+            <li class="serial_num">
+                <div class="choice">
+                    <input type="checkbox">
+                    <div class="choice_checked iconfont"></div>
+                </div>
+                <p>交易序列号:<span>128361819311</span></p>
+            </li>
+            <li class="serial_num">
+                <div class="choice">
+                    <input type="checkbox">
+                    <div class="choice_checked iconfont"></div>
+                </div>
+                <p>交易序列号:<span>128361819311</span></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

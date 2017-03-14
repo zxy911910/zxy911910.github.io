@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>编辑</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my/business_infor.css">
+    <script src="../assets/lib/iscroll.js"></script>
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+</head>
+<body>
+<div class="fn-commercial-commercial fn-business-infor outbox">
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>编辑</h1>
+        <a href="javascript:;">确定</a>
+    </div>
+    <ul class="fn-commercial-list">
+        <!-- 编辑时为 edit  取消为cacel -->
+        <li class="edit">
+            <p>商户类型</p>
+            <p>零售型</p>
+            <input type="text" placeholder="商户类型">
+        </li>
+        <li class="edit">
+            <p>营业面积</p>
+            <p>>100m</p>
+            <input type="text" placeholder="营业面积">
+        </li>
+        <li class="edit">
+            <p>法人姓名(待审核)</p>
+            <p>年后</p>
+            <input type="text" placeholder="法人姓名">
+        </li>
+        <li class="cancel">
+            <p>营业执照号</p>
+            <p>293827424</p>
+            <input type="text" placeholder="营业执照号">
+        </li>
+    </ul>
+    <div class="fn-commercial-pic">
+        <p class="fn-commercial-title">
+            商户照片+三证照片
+        </p>
+        <div class="fn-commercial-pic-info">
+            <ul>
+                <li>
+                    <div class="upload">
+                        <p class="iconfont">&#xe61f;</p>
+                        <p >点击上传</p>
+                    </div>
+                    <div class="edit hide_it">
+                        <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                        <span><i class="iconfont">&#xe658;</i></span>
+                    </div>
+                    <p class="store">商景</p>
+                </li>
+                <li>
+                    <div class="upload">
+                        <p class="iconfont">&#xe61f;</p>
+                        <p >点击上传</p>
+                    </div>
+                    <div class="edit hide_it">
+                        <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                        <span><i class="iconfont">&#xe658;</i></span>
+                    </div>
+                    <p class="store">商景</p>
+                </li>
+                <li>
+                    <div class="upload hide_it">
+                        <p class="iconfont">&#xe61f;</p>
+                        <p >点击上传</p>
+                    </div>
+                    <div class="edit">
+                        <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                        <span><i class="iconfont">&#xe658;</i></span>
+                    </div>
+                    <p class="store">商景</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="b2b_mask fn-store-type">
+<div class="store-type">
+    <div class="choice">
+        <span>取消</span>
+        <span>确定</span>
+    </div>
+    <div class="detail_type">
+        <div class="bus">
+            <h3>批发商户</h3>
+            <ul>
+                <li class="cur">企事业单位</li>
+                <li>企事</li>
+                <li>企事业</li>
+                <li>企事业单</li>
+                <li>企事</li>
+                <li>企事业</li>
+                <li>企事业单</li>
+            </ul>
+        </div>
+        <div class="bus_detail">
+            <ul>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>11</p>
+                </li>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>22</p>
+                </li>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>33</p>
+                </li>
+                <li class="on">
+                    <h4>社区便利店</h4>
+                    <p>44</p>
+                </li>
+                <li>
+                    <h4>社区便利店</h4>
+                    <p>55</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="btn_box btn_red btn_de">
+    <a href="javascript:;">提交</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+/* CSS Document */
+.b2b_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 66;
+}
+.b2b_mask .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+/***
+ UI 自定义 公共 ued颜色规范
+**/
+.over {
+  overflow: hidden;
+}
+body {
+  background-color: #EDEEEF;
+}
+.outbox .top_box .right {
+  position: absolute;
+  top: 0;
+  right: .28rem;
+  line-height: .88rem;
+}
+.outbox .top_box .right a {
+  color: #666;
+  font-size: .32rem;
+  text-decoration: none;
+}
+.outbox .head {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.outbox .head img {
+  display: inline-block;
+  width: 40%;
+}
+.outbox .login_box .wrapper .reg_box ul {
+  width: 100%;
+  background-color: #fff;
+}
+.outbox .login_box .wrapper .reg_box ul li {
+  height: .96rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #d5d5d5;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: .24rem;
+  margin-left: .24rem;
+}
+.outbox .login_box .wrapper .reg_box ul li em,
+.outbox .login_box .wrapper .reg_box ul li input {
+  font-size: 0.32rem;
+  color: #666666;
+}
+.outbox .login_box .wrapper .reg_box ul li:last-child {
+  border: 0;
+}
+.outbox .login_box .wrapper .reg_box ul li input {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  color: #333333;
+  border: 0;
+  text-indent: 0.2rem;
+}
+.outbox .login_box .wrapper .btn_box {
+  padding: .24rem .24rem .3rem .24rem;
+}
+.outbox .login_box .wrapper .btn_box .btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: .84rem;
+  font-size: .32rem;
+  border-radius: .04rem;
+  color: #fff;
+}
+.outbox .login_box .wrapper .btn_box .btn.btn_de {
+  background: #dedede;
+}
+.outbox .login_box .wrapper .btn_box .btn.btn_red {
+  background: #c70034;
+}
+.outbox .login_box .divFormat {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: .24rem .24rem .34rem .24rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.outbox .login_box .divFormat a {
+  color: #666666;
+  font-size: 0.32rem;
+}
+.outbox .youke {
+  width: 100%;
+}
+.outbox .youke p {
+  text-align: center;
+}
+.outbox .youke p img {
+  display: inline-block;
+}
+.b2b_mask .txt {
+  width: 80%;
+  padding: .24rem;
+  background: #fff;
+  color: #333333;
+}
+.b2b_mask .txt .tishi {
+  text-align: left;
+}
+.b2b_mask .txt .info {
+  margin-left: 0.4rem;
+}
+.b2b_mask .txt .confirm {
+  text-align: right;
+}

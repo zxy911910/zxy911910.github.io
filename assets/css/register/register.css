@@ -1,0 +1,225 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+/* CSS Document */
+.b2b_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 66;
+}
+.b2b_mask .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+/***
+ UI 自定义 公共 ued颜色规范
+**/
+.over {
+  overflow: hidden;
+}
+.no_yzm {
+  margin-top: 0.5rem;
+  padding: 0 .24rem;
+}
+.no_yzm h3 {
+  color: #666;
+  margin-bottom: .2rem;
+  font-size: .24rem;
+}
+.no_yzm p {
+  color: #999;
+  margin-bottom: .14rem;
+  line-height: .32rem;
+  font-size: .24rem;
+  text-indent: -20px;
+  margin-left: 20px;
+}
+.no_yzm p a {
+  color: #06c;
+}
+body {
+  background-color: #EDEEEF;
+}
+input {
+  border: 0;
+}
+.reg_box {
+  width: 100%;
+  background-color: #fff;
+}
+.reg_box ul {
+  padding-left: 0.24rem;
+}
+.reg_box ul li {
+  padding-right: 0.24rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0.98rem;
+  line-height: 0.0098rem;
+  border-bottom: 1px solid #d5d5d5;
+}
+.reg_box ul li input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 0.5rem;
+}
+.reg_box ul li span {
+  display: block;
+}
+.reg_box ul li .tel {
+  padding-right: .3rem;
+}
+.reg_box ul li .icon {
+  margin-right: 0.15rem;
+}
+.reg_box ul li .icon_red {
+  color: #D5103F;
+}
+.reg_box ul li .yzm {
+  position: relative;
+  color: #D30018;
+}
+.reg_box ul li .yzm.die {
+  color: #999;
+}
+.reg_box ul li .yzm:after {
+  content: "";
+  position: absolute;
+  left: -0.25rem;
+  top: -0.35rem;
+  width: 1px;
+  height: 0.7rem;
+  background-color: #D9D9D9;
+}
+.reg_box ul li:last-child {
+  border: 0;
+}
+.read {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.24rem;
+  margin: 0.3rem 0 0.5rem;
+}
+.read .agree {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: .3rem;
+  height: .3rem;
+  border: 1px solid #999999;
+  margin-right: 0.15rem;
+  background-color: #fbfbfb;
+}
+.read .agree.on {
+  position: relative;
+  background: #D4103F;
+  border: none;
+}
+.read .agree.on::after {
+  position: absolute;
+  top: .04rem;
+  left: .03rem;
+  display: block;
+  width: .18rem;
+  height: .12rem;
+  content: '';
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-bottom: #fff solid .04rem;
+  border-left: #fff solid .04rem;
+}
+.next_btn {
+  height: 1rem;
+  margin: 0 .24rem;
+  font-size: .36rem;
+  text-align: center;
+  line-height: 1rem;
+  border-radius: .08rem;
+}
+.next_btn a {
+  color: #fff;
+  font-size: .32rem;
+}
+.next_btn.btn_de {
+  background-color: #D4D5D6;
+}
+.next_btn.btn_red {
+  background-color: #D21140;
+}
+.grap_yzm {
+  background: #EEEEEE;
+  width: 70%;
+  padding: 0.4rem 0.24rem;
+}
+.grap_yzm .text {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.grap_yzm .grap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.grap_yzm .grap .yzm_img {
+  height: .6rem;
+  width: 1.5rem;
+  display: inline-block;
+}
+.grap_yzm .grap .yzm_change {
+  height: .47rem;
+  width: .47rem;
+  margin-left: 1.2rem;
+  display: inline-block;
+}
+.grap_yzm input {
+  width: 100%;
+  height: .86rem;
+  border: 1px solid #999;
+  margin: .4rem 0 .6rem;
+}
+.grap_yzm .con {
+  text-align: right;
+  color: #008D7C;
+}
+.grap_yzm .con span:nth-child(1) {
+  margin-right: 0.3rem;
+}
+.tx {
+  margin: 0.2rem 0 0.5rem;
+  padding: 0 .24rem;
+  font-size: 0.22rem;
+  color: #999;
+}

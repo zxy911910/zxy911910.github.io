@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+	<title>关于我们</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/about/about.css">
+</head>
+<body>
+<div class="outbox main_content">
+	<!-- 顶部 -->
+	<div class="top_box">
+		<span class="top_back"></span>
+		<h1>关于我们</h1>
+	</div>
+
+	<div class="pbox">
+		<div class="about_box">
+			<h3>关于</h3>
+		</div>
+	</div>
+</div>
+</body>
+</html>

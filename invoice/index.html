@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>发票</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/invoice/index.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <div class="fn_b2b_invoice outbox">
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>发票信息</h1>
+            <span class="more">编辑</span>
+        </div>
+        <div class="invoice_list">
+            <ul>
+                <li>
+                    <p>是否要开发票</p>
+                    <p class="hide_it">需开发票</p>
+                    <div class="invoice">
+                        <p><span class="yes"></span>不开发票</p>
+                        <p><span></span>开发票</p>
+                    </div>
+                </li>
+                <li>
+                    <p>发票类型</p>
+                    <p class="hide_it">普票</p>
+                    <select>
+                        <option value="">111</option>
+                        <option value="">222</option>
+                        <option value="">333</option>
+                        <option value="">444</option>
+                    </select>
+                </li>
+                <li>
+                    <p>开票周期</p>
+                    <p class="hide_it">月结</p>
+                    <select>
+                        <option value="">111</option>
+                        <option value="">222</option>
+                        <option value="">333</option>
+                        <option value="">444</option>
+                    </select>
+                </li>
+                <li>
+                    <p>单位名称</p>
+                    <p class="hide_it">123456</p>
+                    <input type="text" placeholder="请输入单位名称">
+                </li>
+                <li>
+                    <p>纳税人识别码</p>
+                    <p class="hide_it">123456</p>
+                    <input type="text" placeholder="纳税人识别码">
+                </li>
+                <li>
+                    <p>注册地址</p>
+                    <p class="address">
+                        <span>上海 上海市 闸北区</span>
+                        <span>彭江路602号大宁德比易园e座339室</span>
+                    </p>
+                </li>
+                <li>
+                    <p>注册电话</p>
+                    <p class="hide_it">131*****382</p>
+                    <input type="text" placeholder="注册电话">
+                </li>
+                <li>
+                    <P>开户银行</P>
+                    <P class="hide_it">浦发银行</P>
+                    <input type="text" placeholder="请输入开户银行">
+                </li>
+                <li>
+                    <p>银行账户</p>
+                    <p class="hide_it">123725199</p>
+                    <input type="text" placeholder="请输入银行账户">
+                </li>
+            </ul>
+        </div>
+        <p class="submit">提交</p>
+    </div>
+</body>
+</html>

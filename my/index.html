@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>我的账户</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my/my.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <div class="outbox fn_b2b_my">
+        <div class="my_zone">
+            <div class="my_pic">
+                <img src="../assets/images/my/defaulthead.png">
+            </div>
+            <p class="hide">阿尼小吃店</p>
+            <p class="my_enter">
+                <span>登录</span><span>注册</span>
+            </p>
+            <p class="setting ">注销</p>
+        </div>
+        <div class="my_prompt">
+            <a href="javascript:;">亲，审核通过才能查看优惠价格哦! 拨打180-1978-9179</a>
+        </div>
+        <div class="my_order_state">
+            <div class="my_order">
+                <p>我的订单</p>
+                <p>查看全部订单<span class="iconfont">&#xe60b;</span></p>
+            </div>
+            <ul class="my_state">
+                <li>
+                    <a href="javascript:;">
+                        <p class="iconfont">&#xe639;</p>
+                        <p>待出货</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="iconfont">&#xe62e;</p>
+                        <p>已出货</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="iconfont">&#xe670;</p>
+                        <p>以验货</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="iconfont">&#xe693;</p>
+                        <p>已付款</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="iconfont">&#xe694;</p>
+                        <p>已开票</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="my_charge_info">
+            <h3>负责业代信息</h3>
+            <ul class="my_list">
+                <li>
+                    <p>业代编码</p>
+                    <p>123465</p>
+                </li>
+                <li>
+                    <p>业代姓名</p>
+                    <p>苏柏瑜</p>
+                </li>
+                <li>
+                    <p>业代联系电话</p>
+                    <p>123465789</p>
+                </li>
+                <li>
+                    <p>出货门店</p>
+                    <p>大润发闸北店</p>
+                </li>
+                <li>
+                    <p>门店服务电话</p>
+                    <p>021-123312-455</p>
+                </li>
+                <li>
+                    <p>业代编码</p>
+                    <p>123465</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="my_delivery">
+            <li>
+                <p>配送信息</p>
+                <p class="iconfont">&#xe60b;</p>
+            </li>
+            <li>
+                <p>商户信息</p>
+                <p class="iconfont">&#xe60b;</p>
+            </li>
+            <li>
+                <p>发票信息</p>
+                <p class="iconfont">&#xe60b;</p>
+            </li>
+        </ul>
+        <div class="fast-bottom-nav">
+    <div class="nav-box">
+        <div class="active">
+            <P class="iconfont">&#xe652;</P>
+            <p>商品分类</p>
+        </div>
+        <div>
+            <P class="iconfont" style="font-size:0.5rem">&#xe659;</P>
+            <p>购物车</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe65d;</P>
+            <p>我的账户</p>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+</html>

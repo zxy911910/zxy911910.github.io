@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>欢迎访问网站b2b</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<link rel="shortcut icon" href="http://www.feiniu.com/lib/sh_zh-cn/images/feiniu_favicon.ico">
+	<link rel="stylesheet" type="text/css" href="http://cdn.staticfile.org/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.bootcss.com/react/0.13.3/react.min.js"></script>
+	<script type="text/javascript" src="http://cdn.bootcss.com/react/0.13.3/react-with-addons.min.js"></script>
+
+	<script type="text/javascript" src="http://cdn.staticfile.org/underscore.js/1.7.0/underscore-min.js"></script>
+
+	<style type="text/css">
+		#versions li {
+			margin: 0 5px;
+		}
+
+		.nav-tabs {
+			border: none;
+		}
+
+		.panel {
+			border-color: #d9534f;
+			-webkit-transition: 0.1s;
+			-o-transition: 0.1s;
+			transition: 0.1s;
+		}
+
+		.panel .panel:hover {
+			background-color: #ddd;
+			-webkit-transform: scale(1.01);
+			-ms-transform: scale(1.01);
+			-o-transform: scale(1.01);
+			transform: scale(1.01);
+		}
+
+		.panel-body {
+			padding: 1px 5px;
+		}
+
+		.nav {
+			counter-reset: item;
+		}
+
+		.nav li {
+			padding: 5px;
+		}
+
+		.nav li a:before {
+			counter-increment: item;
+			content: counter(item) ".";
+		}
+
+		.nav {
+			counter-reset: item;
+		}
+
+		#panel {
+			counter-reset: item2;
+		}
+
+		.panel-heading .btn:before {
+			counter-increment: item2;
+			content: counter(item2) "--";
+		}
+
+		.nav li small {
+			display: block;
+			text-align: center;
+		}
+
+		.nav li a {
+			padding: 3px;
+		}
+	</style>
+
+</head>
+<body class="container-fluid">
+
+<h1>
+  网上商城 生活必需品专业网站 触屏版
+	<div id="sethtml">v2.2.0</div>
+	<div id="versions"></div>
+</h1>
+<!-- 输出点 -->
+<div id="panel">
+
+</div>
+<script type="text/javascript"></script>
+<!-- 模板 -->
+<div id="mub" style="display: none;">
+	<div id="panel-{{id}}" class="panel panel-default">
+		<div class="panel-heading"><a class="btn btn-danger" href="{{url}}">{{i}}.{{name}}({{pname}})</a></div>
+		<div class="panel-body">
+			<ul class="nav nav-tabs">
+				{{li}}
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="mub-li" style="display:none;">
+	<li><a href="{{url}}">{{title}}</a>
+		<small>{{name}}</small>
+	</li>
+</div>
+<script>
+	// 	// 文件夹说明
+	var _sm = {
+		about: '关于我们',
+		act: '其他',
+		cart: '购物车',
+		category: '商品分类',
+		detail: '商详',
+		list: '商品列表',
+		my: '个人中心',
+		order: '订单相关',
+		search: '搜索相关',
+		login: '登录',
+		register: '注册',
+		card: '购物卡',
+		gold: '购物金',
+		address: '收货地址',
+		coupon: '优惠券',
+		invoice: '发票',
+		IconFont: '字体图标',
+		pay: '支付',
+		gestyle: '一些通用的样式',
+		seckill: '秒杀',
+		channel: '频道',
+		tuan: '团购',
+		integral: '积分'
+	};
+
+</script>
+<script>
+	function scrollTop() {
+		if (!!window.sessionStorage) {
+			var $window = $(window);
+
+			if (window.sessionStorage.scroll) {
+				$("body").animate({scrollTop: window.sessionStorage.scroll}, 100);
+			}
+
+			$window.on('scroll', function () {
+				window.sessionStorage.scroll = $window.scrollTop();
+			});
+		}
+	}
+</script>
+<script type="text/javascript" src="./assets/js/_index/index.js"></script>
+</body>
+</html>

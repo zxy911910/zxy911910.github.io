@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>配送信息</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my/delivery.css">
+    <script src="../assets/js/common/vendor.js"></script>
+</head>
+<body>
+    <div class="fn_b2b_delivery outbox">
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>配送信息</h1>
+            <span class="more">编辑</span>
+        </div>
+        <ul class="delivery_list">
+            <li>
+                <p>商户信息</p>
+                <p class="hide_it">阿尼小吃店</p>
+                <input type="text" value="阿尼小吃店">
+            </li>
+            <li>
+                <p>收货联系人</p>
+                <p class="hide_it">妮妮</p>
+                <input type="text" value="妮妮">
+            </li>
+            <li>
+                <p>收货联系人电话</p>
+                <p class="hide_it">131*****382</p>
+                <input type="text" value="131*****382">
+            </li>
+            <li>
+                <p>收货地址</p>
+                <p class="address">
+                    <span>上海 上海市 闸北区</span>
+                    <span>彭江路602号大宁德必易园e座339室</span>
+                </p>
+            </li>
+        </ul>
+        <div class="submit">提交</div>
+    </div>
+</body>
+</html>

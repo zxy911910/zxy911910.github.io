@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <title>Swiper实现tab切换动画效果</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components/tab_swiper.css">
+    <script type="text/javascript" src="../assets/js/common/vendor.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js"></script>
+</head>
+<body>
+<div class="outbox">
+    <div class="top_box">
+        <span class="top_back"></span>
+        <h1>热卖榜</h1>
+    </div>
+
+    <div class="item-top">
+        <div class="item-list">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide cur" href="javascript:;">家清日百</a>
+                    <a class="swiper-slide" href="javascript:;">母婴用品</a>
+                    <a class="swiper-slide" href="javascript:;">进口零食</a>
+                    <a class="swiper-slide" href="javascript:;">家电数码</a>
+                    <a class="swiper-slide" href="javascript:;">环球购</a>
+                    <a class="swiper-slide" href="javascript:;">流行百货</a>
+                    <a class="swiper-slide" href="javascript:;">食品饮料</a>
+                    <a class="swiper-slide" href="javascript:;">个护彩妆</a>
+                    <a class="swiper-slide" href="javascript:;">家清日百1</a>
+                    <a class="swiper-slide" href="javascript:;">母婴用品1</a>
+                    <a class="swiper-slide" href="javascript:;">进口零食1</a>
+                    <a class="swiper-slide" href="javascript:;">家电数码1</a>
+                    <a class="swiper-slide" href="javascript:;">环球购1</a>
+                    <a class="swiper-slide" href="javascript:;">流行百货1</a>
+                    <a class="swiper-slide" href="javascript:;">食品饮料1</a>
+                    <a class="swiper-slide" href="javascript:;">个护彩妆1</a>
+                </div>
+            </div>
+            <p class="toggle-btn">
+                <i class="iconfont">&#xe621;</i>
+            </p>
+        </div>
+        <div class="item-selected-tab">
+            <div class="swiper-container-tab">
+                <div class="swiper-wrapper">
+                    <span class="swiper-slide tab_name cur">骑行运动</span>
+                    <span class="swiper-slide tab_name">手机通讯</span>
+                    <span class="swiper-slide tab_name">清洁用品</span>
+                    <span class="swiper-slide tab_name">厨房配件</span>
+                    <span class="swiper-slide tab_name">粮油调味</span>
+                    <span class="swiper-slide tab_name">进口食品</span>
+                    <span class="swiper-slide tab_name">大家电</span>
+                    <span class="swiper-slide tab_name">中外名酒</span>
+                    <span class="swiper-slide tab_name">洗发护发</span>
+                    <span class="swiper-slide tab_name">文具</span>
+                    <span class="swiper-slide tab_name">奶粉</span>
+                    <span class="swiper-slide tab_name">骑行运动</span>
+                    <span class="swiper-slide tab_name">手机通讯</span>
+                    <span class="swiper-slide tab_name">清洁用品</span>
+                    <span class="swiper-slide tab_name">厨房配件</span>
+                    <span class="swiper-slide tab_name">粮油调味</span>
+                    <span class="swiper-slide tab_name">进口食品</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- 弹框 -->
+    <div class="selected_tab">
+        <div class="tab_top">
+            <span class="tab_title">为你精选以下标签</span>
+            <span class="tab_icon_btn">
+                <i class="iconfont">&#xe623;</i>
+            </span>
+        </div>
+        <div class="tabs">
+            <span class="tab_name cur">骑行运动</span>
+            <span class="tab_name">手机通讯</span>
+            <span class="tab_name">清洁用品</span>
+            <span class="tab_name">厨房配件</span>
+            <span class="tab_name">粮油调味</span>
+            <span class="tab_name">进口食品</span>
+            <span class="tab_name">大家电</span>
+            <span class="tab_name">中外名酒</span>
+            <span class="tab_name">洗发护发</span>
+            <span class="tab_name">文具</span>
+            <span class="tab_name">奶粉</span>
+        </div>
+    </div>
+
+    <div class="popup_cover"></div>
+
+</div>
+
+
+</body>
+<script>
+    window.onload = function(){
+        mySwiper = new Swiper('.swiper-container', {
+            mode: 'horizontal',
+            slidesPerView: 'auto'
+        });
+
+        mySwiperTab = new Swiper('.swiper-container-tab', {
+            mode: 'horizontal',
+            slidesPerView: 'auto',
+            slidesPerColumn : 2
+        });
+
+        /*每个tab绑定点击事件*/
+        $('a.swiper-slide').on('click', function(){
+            $(this).addClass('cur').siblings().removeClass('cur');
+            $(this).index() > 0 && mySwiper.slideTo($(this).index()-1);
+
+        });
+
+        /*向下箭头按钮绑定事件*/
+        $('p.toggle-btn').on('click', function(){
+            //弹框
+            $(".popup_cover").show();
+            $('.selected_tab').addClass('down');
+            $(".selected_tab").show();
+        });
+    };
+</script>
+
+</html>

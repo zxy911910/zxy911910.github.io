@@ -1,0 +1,710 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+.b2b_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 66;
+}
+.b2b_mask .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+/***
+ UI 自定义 公共 ued颜色规范
+**/
+.over {
+  overflow: hidden;
+}
+/*DOM结构
+<div class="b2b_title">
+    <div>
+        <img src="<%=ctx%>/assets/images/b2b/erode_03.png">
+    </div>
+    <span class="store">大润发闸北店</span>
+</div>
+*/
+.b2b_title {
+  line-height: 1.08rem;
+  text-align: center;
+  position: relative;
+  background: #f9f9f9;
+}
+.b2b_title:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.b2b_title div {
+  display: inline-block;
+  width: 2.6rem;
+  height: 0.6rem;
+  vertical-align: middle;
+}
+.b2b_title div img {
+  width: 100%;
+  height: 100%;
+}
+.b2b_title .store {
+  position: absolute;
+  right: 0.24rem;
+  top: 0;
+  max-width: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*DOM 结构
+  <p class="info-login">亲，赶快去登录/注册才能查看优惠价格哦！<a href="javascript:;">登录/注册</a></p>
+*/
+.info-login {
+  line-height: 0.35rem;
+  background: #ffefef;
+  padding: 0.2rem 0.24rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.24rem;
+  color: #666666;
+}
+.info-login a {
+  text-decoration: underline;
+  color: #d7063b;
+}
+/*DOM 结构
+    <div class="search">
+        <div class="search-address">
+            <p class="back"><span class="iconfont"></span></p>
+            <form class="search-box" method="post" action="">
+              <span class="iconfont">&#xe67b;</span><input type="search" placeholder="请输入" class="text"><span class="cancle iconfont">&#xe66a;</span><input type="submit" class="hide_it">
+            </form>
+            <p class="iconfont cart">&#xe659;<span>1</span></p>
+            <p class="iconfont nav">&#xe684;</p>
+        </div>
+        <ul class="search-list hide">
+            <li>
+              <h3>大宁</h3>
+              <p>玉堂街55号</p>
+            </li>
+            <li>
+              <h3>大宁</h3>
+              <p>玉堂街55号</p>
+            </li>
+            <li>
+              <h3>大宁</h3>
+              <p>玉堂街55号</p>
+            </li>
+            <li>
+              <h3>大宁</h3>
+              <p>玉堂街55号</p>
+            </li>
+        </ul>
+        <div class="mask"></div>
+    </div>
+*/
+.search {
+  background: #fff;
+  position: relative;
+}
+.search .search-address {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 0.84rem;
+  height: 0.9rem;
+  padding: 0 0.2rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.search .search-address:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.search .search-address .back {
+  position: relative;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-top: -0.2rem;
+  margin-left: -0.24rem;
+}
+.search .search-address .back:after {
+  content: '';
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-right: 0.2rem;
+  margin-top: -0.08rem;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent ;
+  border-left: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.search .search-address .search-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #e5e5e5;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  border-radius: 0.1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.search .search-address .search-box span {
+  margin: 0 0.1rem 0 0.2rem;
+}
+.search .search-address .search-box .text {
+  line-height: 0.65rem;
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.search .search-address .search-box input {
+  border: none;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.search .search-address .search-box input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizeing: content-box;
+}
+.search .search-address .search-box input::-webkit-search-cancel-button,
+.search .search-address .search-box input::-webkit-search-decoration {
+  display: none;
+}
+.search .search-address .cart {
+  padding-left: 0.3rem;
+  padding-right: 0.08rem;
+  position: relative;
+}
+.search .search-address .cart .carticon {
+  font-size: 0.48rem;
+  line-height: 0.9rem;
+}
+.search .search-address .cart .num {
+  position: absolute;
+  top: 10%;
+  right: -0.2rem;
+  display: block;
+  min-width: 0.37rem;
+  height: 0.37rem;
+  line-height: 0.3rem;
+  border-radius: 50%;
+  background: #d7063b;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.24rem;
+  padding: 0.02rem 0.08rem;
+}
+.search .search-address .cancle {
+  color: #a8a8a8;
+  margin-left: 0.3rem;
+}
+.search .down {
+  position: relative;
+}
+.search .down:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.search .search-list {
+  height: auto;
+}
+.search .search-list li {
+  position: relative;
+  padding-left: 0.24rem;
+}
+.search .search-list li:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.search .search-list li h3 {
+  font-size: 0.32rem;
+  color: #333333;
+  padding-top: 0.3rem;
+  padding-bottom: 0.14rem;
+}
+.search .search-list li p {
+  padding-bottom: 0.3rem;
+  font-size: 0.24rem;
+  color: #999;
+}
+.search .search-list li:last-child:after:after {
+  height: 0;
+}
+.search .mask {
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.bg_3e {
+  background: #eee;
+}
+.bg_f2 {
+  background: #f2f2f2;
+}
+.bg_3f {
+  background: #fff!important;
+}
+/* DOM 结构
+    <div class="search-off">
+      <div>
+          <img src="../../assets/images/b2b/nofound.png">
+      </div>
+    <p>抱歉，没有找到相应商品</p>
+    <p class="button">去逛逛</p>
+</div>
+*/
+.search-off {
+  background: #eee;
+  height: 100%;
+  padding-top: 2rem;
+}
+.search-off div {
+  width: 3.9rem;
+  height: 0.9rem;
+  margin: 0 auto 1rem;
+}
+.search-off div img {
+  width: 100%;
+  height: 100%;
+}
+.search-off p {
+  text-align: center;
+  color: #666;
+}
+.search-off .button {
+  margin: 0.6rem 0.24rem 0;
+  line-height: 0.8rem;
+  font-size: 0.32rem;
+  background: #c70034;
+  color: #fff;
+}
+.loading_btm {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.32rem;
+}
+.loading_btm b,
+.loading_btm i,
+.loading_btm em {
+  vertical-align: middle;
+}
+.loading_btm em {
+  margin-right: 0.1rem;
+  display: inline-block;
+  height: 0.44rem;
+  width: 0.44rem;
+  overflow: hidden;
+  background: url('../../images/loading.gif') no-repeat;
+  -webkit-background-size: 0.44rem 0.44rem;
+          background-size: 0.44rem 0.44rem;
+}
+.loading_btm b {
+  margin-right: 0.1rem;
+  display: inline-block;
+  height: 0.44rem;
+  width: 0.44rem;
+  overflow: hidden;
+  background: url('../../images/loading_txt.png') no-repeat;
+  -webkit-background-size: 0.44rem 0.44rem;
+          background-size: 0.44rem 0.44rem;
+}
+.loading_btm b:before {
+  display: block;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  content: "";
+  background: url('../../images/loading.png') no-repeat;
+  -webkit-background-size: 0.44rem 0.44rem;
+          background-size: 0.44rem 0.44rem;
+  -webkit-animation: loading_rotate 0.8s linear infinite;
+       -o-animation: loading_rotate 0.8s linear infinite;
+          animation: loading_rotate 0.8s linear infinite;
+}
+.loading_pop {
+  position: fixed;
+  top: 0.88rem;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.loading_pop em {
+  display: block;
+  height: 0.88rem;
+  width: 0.88rem;
+  overflow: hidden;
+  background: url('../../images/loadingJSbg.png') no-repeat;
+  -webkit-background-size: 16.20rem 0.88rem;
+          background-size: 16.20rem 0.88rem;
+}
+.loading_pop em:before {
+  display: block;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: url('../../images/loading_txt.png') no-repeat;
+  -webkit-background-size: 0.88rem 0.88rem;
+          background-size: 0.88rem 0.88rem;
+}
+.loading_pop b {
+  margin-right: 0.1rem;
+  display: block;
+  height: 0.88rem;
+  width: 0.88rem;
+  overflow: hidden;
+  background: url('../../images/loading_txt.png') no-repeat;
+  -webkit-background-size: 0.88rem 0.88rem;
+          background-size: 0.88rem 0.88rem;
+}
+.loading_pop b:before {
+  display: block;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  content: "";
+  background: url('../../images/loading.png') no-repeat;
+  -webkit-background-size: 0.88rem 0.88rem;
+          background-size: 0.88rem 0.88rem;
+  -webkit-animation: loading_rotate 0.8s linear infinite;
+       -o-animation: loading_rotate 0.8s linear infinite;
+          animation: loading_rotate 0.8s linear infinite;
+}
+.loading_pop.all {
+  top: 0;
+}
+@-webkit-keyframes loading_rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-o-keyframes loading_rotate {
+  from {
+    -o-transform: rotate(0deg);
+       transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+       transform: rotate(360deg);
+  }
+}
+@keyframes loading_rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fixedbtn {
+  position: fixed;
+  bottom: 1.12rem;
+  right: 0.24rem;
+  width: 0.88rem;
+  z-index: 99;
+}
+.fixedbtn li {
+  width: 34px;
+  height: 34px;
+  display: block;
+  margin-bottom: 0.18rem;
+  position: relative;
+  background: url('../../images/fixedbtns.png') no-repeat;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+}
+.fixedbtn li:last-child {
+  margin-bottom: 0;
+}
+.fixedbtn li b {
+  position: absolute;
+  right: .01rem;
+  top: .01rem;
+  min-width: .37rem;
+  height: .37rem;
+  line-height: .37rem;
+  display: block;
+  background: #c70034;
+  font-size: .18rem;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.fixedbtn li.search {
+  background-position: 0 0;
+}
+.fixedbtn li.homepage {
+  background-position: 0 -34px;
+}
+.fixedbtn li.footprint {
+  background-position: 0 -68px;
+}
+.fixedbtn li.cart {
+  background-position: 0 -102px;
+}
+.fixedbtn li.top {
+  background-position: 0 -136px;
+}
+body {
+  background: #eee;
+}
+.fn_b2b_title {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 667;
+}
+.b2blist {
+  background: #fff;
+  padding-top: 0.1rem;
+}
+.b2blist li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0 0.24rem;
+}
+.b2blist li:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.b2blist li > * {
+  display: block;
+}
+.b2blist li:last-child:after {
+  height: 0;
+}
+.goods_pic a {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.goods_pic a img {
+  width: 100%;
+  height: 100%;
+}
+.goods_info {
+  margin-left: 0.25rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.goods_info .goods_title {
+  padding-top: 0.2rem;
+  line-height: 0.4rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  color: #333333;
+}
+.goods_info .norms {
+  margin-top: 0.14rem;
+  margin-bottom: 0.37rem;
+  color: #888;
+}
+.goods_info .goods_add {
+  color: #d7063b;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.45rem;
+}
+.goods_info .goods_add > * {
+  display: block;
+}
+.goods_info .goods_add .price {
+  font-size: 0.32rem;
+}
+.goods_info .goods_add .price em,
+.goods_info .goods_add .price b {
+  font-size: 0.24rem;
+}
+.goods_info .goods_add .cart_case a {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  text-align: center;
+  line-height: 0.6rem;
+  color: #c70034;
+  background: #ffefef;
+  font-size: .36rem;
+  border-radius: 50%;
+  position: relative;
+}
+.goods_info .goods_add .cart_case a:after {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #c70034;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+       -o-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+       -o-transform-origin: 0 0;
+          transform-origin: 0 0;
+  left: 0;
+  top: 0;
+}
+.fn-b2b-list-nomore {
+  margin-top: 0.7rem;
+  color: #999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fn-b2b-list-nomore:after,
+.fn-b2b-list-nomore:before {
+  content: '';
+  height: 1px;
+  width: 0.8rem;
+  background: #999;
+}
+.fn-b2b-list-nomore:after {
+  margin-left: 0.3rem;
+}
+.fn-b2b-list-nomore:before {
+  margin-right: 0.3rem;
+}
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 666;
+}
+.over {
+  overflow: hidden;
+  height: 100%;
+}

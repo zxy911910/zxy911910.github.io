@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + '//m.feiniu.com/nonsupport.html';
+        }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        //dom ready later,  resize root font-size by 750
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        document.documentElement.dataset.dpr = window.devicePixelRatio;
+      }, false);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/detail/index.css">
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.1/js/swiper.min.js"></script>
+</head>
+<body>
+<div class="outbox">
+    <div class="fixed_nav">
+        <div class="top_box">
+            <span class="top_back"></span>
+            <h1>商品详情</h1>
+        </div>
+        <p class="info-login">亲，赶快去登录/注册才能查看优惠价格哦！<a href="javascript:;">登录/注册</a></p>
+    </div>
+    <div class="detail_main">
+        <!-- 点击小图换大图 S -->
+        <div id="maswipe" class="banner J_22">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:;"><img src="http://img03.fn-mart.com/C/item/2013/1028/201310C280002411/_820492902_640x640_q75.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="http://img03.fn-mart.com/C/item/2013/1028/201310C280002411/_820492902_640x640_q75.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="http://img03.fn-mart.com/C/item/2013/1028/201310C280002411/_820492902_640x640_q75.jpg" alt=""></a></div>
+            </div>
+            <div id="pager" class="pager"></div>
+        </div>
+        <div class="b2b_mask hide_it J_11">
+            <div id="maswipe2" class="banner2">
+                <div class="top_back hide_it"><i class="iconfont">&#xe620;</i></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="javascript:;"><img src="http://img03.fn-mart.com/C/item/2013/1028/201310C280002411/_820492902_640x640_q75.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="javascript:;"><img src="http://img03.fn-mart.com/C/item/2013/1028/201310C280002411/_820492902_640x640_q75.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="javascript:;"><img src="http://img03.fn-mart.com/C/item/2013/1028/201310C280002411/_820492902_640x640_q75.jpg" alt=""></a></div>
+                </div>
+                <div id="pager2" class="pager2"></div>
+            </div>
+        </div>
+        <!-- 点击小图换大图 E -->
+        <div class="infor">
+            <p class="name">乐事乐事乐事乐事乐事乐事乐事乐事乐事乐事乐事乐事乐事乐事</p>
+            <p class="spec">规格:760g/袋</p>
+            <p class="price"><i class="iconfont">&#xe68a;</i>1399<span>.5</span></p>
+            <!--未登录 不显示价格-->
+            <p class="price"><i class="iconfont">&#xe68a;</i>**</p>
+        </div>
+        <!--商品详情 S-->
+        <div class="detail">
+            <h2>商品详情</h2>
+            <div class="show">
+                <div><img src="https://img12.fn-mart.com/pic/6210133c934b2ab5ce40/B28nnn7z_2CMBguljz/59eaeajGlGealG/CsmRsVhvaBCAVjkKAATXS0lG5Yo745_640x0_q70.jpg" alt=""></div>
+                <div><img src="https://img12.fn-mart.com/pic/6210133c934b2ab5ce40/B28nnn7z_2CMBguljz/59eaeajGlGealG/CsmRsVhvaBCAVjkKAATXS0lG5Yo745_640x0_q70.jpg" alt=""></div>
+                <div><img src="https://img12.fn-mart.com/pic/6210133c934b2ab5ce40/B28nnn7z_2CMBguljz/59eaeajGlGealG/CsmRsVhvaBCAVjkKAATXS0lG5Yo745_640x0_q70.jpg" alt=""></div>
+                <div><img src="https://img12.fn-mart.com/pic/6210133c934b2ab5ce40/B28nnn7z_2CMBguljz/59eaeajGlGealG/CsmRsVhvaBCAVjkKAATXS0lG5Yo745_640x0_q70.jpg" alt=""></div>
+            </div>
+        </div>
+        <!--商品详情 E-->
+        <!--加入购物车按钮 S-->
+        <div class="cart_btn">
+            <!--未登录 no_num -->
+            <div class="cart_num">
+                <div>
+                    <p class="iconfont">&#xe603;<span>99</span></p>
+                    <p>购物车</p>
+                </div>
+            </div>
+            <!--未登录 no_cart-->
+            <div class="add_cart">加入购物车</div>
+        </div>
+        <!--加入购物车按钮  E-->
+    </div>
+    <div class="no_find hide_it">
+        <img src="../../assets/images/b2b/nofound.png" alt="">
+        <p>抱歉,没有找到相应商品</p>
+    </div>
+</div>
+<script>
+
+        var swiper = new Swiper('.banner', {
+            pagination: '.pager',
+            paginationClickable: true
+        });
+        $(".J_22").on("click",function () {
+            $(".J_11").removeClass("hide_it");
+            var swiper = new Swiper('.banner2', {
+                pagination: '.pager2',
+                paginationClickable: true
+            });
+        });
+        $(".J_11").on("click",function () {
+            $(this).addClass("hide_it");
+        });
+
+</script>
+</body>
+</html>

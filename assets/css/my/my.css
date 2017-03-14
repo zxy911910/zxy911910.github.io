@@ -1,0 +1,286 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+.b2b_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 66;
+}
+.b2b_mask .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+/***
+ UI 自定义 公共 ued颜色规范
+**/
+.over {
+  overflow: hidden;
+}
+/*
+<div class="fast-bottom-nav">
+    <div class="nav-box">
+        <div class="active">
+            <P class="iconfont">&#xe652;</P>
+            <p>商品分类</p>
+        </div>
+        <div>
+            <P class="iconfont" style="font-size:0.5rem">&#xe659;</P>
+            <p>购物车</p>
+        </div>
+        <div>
+            <P class="iconfont">&#xe659;</P>
+            <p>我的订单</p>
+        </div>
+    </div>
+</div>
+*/
+.fast-bottom-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 555;
+  width: 100%;
+}
+.fast-bottom-nav .nav-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.fast-bottom-nav .nav-box:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #d5d5d5;
+}
+.fast-bottom-nav .nav-box > * {
+  display: block;
+}
+.fast-bottom-nav .nav-box div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fast-bottom-nav .nav-box div p {
+  text-align: center;
+  color: #333;
+}
+.fast-bottom-nav .nav-box div .iconfont {
+  font-size: 0.45rem;
+  margin-bottom: 0.01rem;
+  padding-top: 0.2rem;
+}
+.fast-bottom-nav .nav-box div p:nth-child(2) {
+  padding-bottom: 0.05rem;
+  font-size: 0.22rem;
+}
+.fast-bottom-nav .nav-box div.active p {
+  color: #d7063b;
+}
+.fast-bottom-nav .nav-box div.disabled_nav p {
+  color: #d2d2d2;
+}
+.fn_b2b_my {
+  background: #eee;
+}
+.my_zone {
+  background: url('../../images/my/top_bg_new.png') no-repeat 100% 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 0.65rem 0 0.35rem 0.24rem;
+  position: relative;
+}
+.my_zone .my_pic {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+.my_zone .my_pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.my_zone .my_enter span {
+  padding: 0 0.2rem;
+}
+.my_zone .my_enter span:first-child {
+  border-right: 1px solid #fff;
+}
+.my_zone .setting {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.24rem;
+}
+.my_prompt {
+  background: #ffefef;
+  padding: 0.2rem 0.24rem;
+}
+.my_prompt a {
+  color: #d7063b;
+  text-decoration: underline;
+}
+.my_prompt p {
+  line-height: 0.3rem;
+  color: #666;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}
+.my_prompt p span {
+  color: #007aff;
+}
+.my_prompt p .active {
+  color: #c70034;
+  position: relative;
+}
+.my_prompt p .active:after {
+  position: absolute;
+  width: 100%;
+  content: "";
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #c70034;
+}
+.my_order_state {
+  background: #fff;
+  padding: 0 0.24rem;
+  margin-bottom: 0.2rem;
+}
+.my_order_state .my_order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 0.9rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.my_order_state .my_order:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.my_order_state .my_order > * {
+  display: block;
+}
+.my_order_state .my_state {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.my_order_state .my_state li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.3rem 0 0.2rem 0;
+}
+.my_order_state .my_state li a {
+  text-align: center;
+  color: #666666;
+}
+.my_order_state .my_state li a p:first-child {
+  margin-bottom: 0.1rem;
+  font-size: 0.4rem;
+}
+.my_charge_info {
+  background: #fff;
+  margin-bottom: 0.2rem;
+  padding-left: 0.24rem;
+}
+.my_charge_info h3 {
+  line-height: 0.85rem;
+}
+.my_list,
+.my_delivery {
+  background: #fff;
+}
+.my_list li,
+.my_delivery li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 0.24rem;
+  line-height: 0.85rem;
+  position: relative;
+}
+.my_list li:after,
+.my_delivery li:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.my_list li p,
+.my_delivery li p {
+  color: #666;
+}
+.my_list li:last-child:after,
+.my_delivery li:last-child:after {
+  height: 0;
+}
+.my_list {
+  margin-bottom: 20 0.01rem;
+}
+.my_delivery {
+  padding-left: 0.24rem;
+  margin-bottom: 1.27rem;
+}

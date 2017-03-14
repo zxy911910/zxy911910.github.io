@@ -1,0 +1,555 @@
+@charset "utf-8";
+/*
+	 * author  : fzq
+	 * email   : fzq@feiniu.com
+	*/
+/* CSS Document */
+.b2b_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 66;
+}
+.b2b_mask .txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+/***
+ UI 自定义 公共 ued颜色规范
+**/
+.over {
+  overflow: hidden;
+}
+/*DOM结构
+<div class="fn-commercial-commercial">
+    <h3 class="fn-commercial-title">商户信息</h3>
+    <ul class="fn-commercial-list">
+        <li>
+            <p>商户类型</p>
+            <input type="text" placeholder="商户类型">
+            <i class="iconfont">&#xe60b;</i>
+        </li>
+        <li>
+            <p>法人姓名</p>
+            <input type="text" placeholder="法人姓名">
+        </li>
+        <li>
+            <p>营业执照号</p>
+            <input type="text" placeholder="营业执照号">
+        </li>
+        <!-- 变透明 yqm_de -->
+        <li class="yqm yqm_de">
+            <p>邀请码</p>
+            <input type="text" placeholder="请输入邀请码">
+            <!-- 邀请码加 on -->
+            无邀请码<span class=""></span>
+        </li>
+    </ul>
+    <div class="fn-commercial-pic">
+        <p class="fn-commercial-title">
+            商户照片
+            <span>仅支持仅支持仅支持仅支持仅支持</span>
+        </p>
+        <div class="fn-commercial-pic-info">
+            <ul>
+                <li>
+                    <div class="upload">
+                        <p class="iconfont">&#xe61f;</p>
+                        <p >点击上传</p>
+                    </div>
+                    <div class="edit hide_it">
+                        <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                        <span><i class="iconfont">&#xe658;</i></span>
+                    </div>
+                    <p class="store">商景</p>
+                </li>
+                <li>
+                    <div class="upload">
+                        <p class="iconfont">&#xe61f;</p>
+                        <p >点击上传</p>
+                    </div>
+                    <div class="edit hide_it">
+                        <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                        <span><i class="iconfont">&#xe658;</i></span>
+                    </div>
+                    <p class="store">商景</p>
+                </li>
+                <li>
+                    <div class="upload hide_it">
+                        <p class="iconfont">&#xe61f;</p>
+                        <p >点击上传</p>
+                    </div>
+                    <div class="edit">
+                        <img src="https://img12.fn-mart.com/pic/7889133a20421e22d5e3/Bz82221zFzCMkgug3z/1iSGSaWau9XyDa/CsmRslapml2ADNzWAAUb72ReUjI891_640x640_q75.jpg" alt="">
+                        <span><i class="iconfont">&#xe658;</i></span>
+                    </div>
+                    <p class="store">商景</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+*/
+.fn-commercial-delivery,
+.fn-commercial-commercial {
+  background: #fff;
+}
+.fn-commercial-delivery .fn-commercial-title,
+.fn-commercial-commercial .fn-commercial-title {
+  font-size: 0.32rem;
+  color: #333333;
+  margin-left: .24rem;
+  padding-right: 0.24rem;
+  position: relative;
+  line-height: 0.86rem;
+}
+.fn-commercial-delivery .fn-commercial-title:after,
+.fn-commercial-commercial .fn-commercial-title:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.fn-commercial-delivery .fn-commercial-list li,
+.fn-commercial-commercial .fn-commercial-list li {
+  line-height: 0.86rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: .24rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 0.32rem;
+  margin-left: .24rem;
+  position: relative;
+}
+.fn-commercial-delivery .fn-commercial-list li:after,
+.fn-commercial-commercial .fn-commercial-list li:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.fn-commercial-delivery .fn-commercial-list li:last-child:after,
+.fn-commercial-commercial .fn-commercial-list li:last-child:after {
+  height: 0;
+}
+.fn-commercial-delivery .fn-commercial-list li > *,
+.fn-commercial-commercial .fn-commercial-list li > * {
+  display: block;
+}
+.fn-commercial-delivery .fn-commercial-list li p,
+.fn-commercial-commercial .fn-commercial-list li p {
+  font-size: 0.32rem;
+  color: #666666;
+}
+.fn-commercial-delivery .fn-commercial-list li input,
+.fn-commercial-commercial .fn-commercial-list li input {
+  border: none;
+  margin-left: 0.3rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fn-commercial-delivery .fn-commercial-list li i.iconfont,
+.fn-commercial-commercial .fn-commercial-list li i.iconfont {
+  width: .28rem;
+  color: #666666;
+  font-size: .4rem;
+}
+.fn-commercial-delivery .fn-commercial-list li.yqm,
+.fn-commercial-commercial .fn-commercial-list li.yqm {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fn-commercial-delivery .fn-commercial-list li.yqm.yqm_de,
+.fn-commercial-commercial .fn-commercial-list li.yqm.yqm_de {
+  color: #D2D2D2;
+}
+.fn-commercial-delivery .fn-commercial-list li.yqm.yqm_de p,
+.fn-commercial-commercial .fn-commercial-list li.yqm.yqm_de p,
+.fn-commercial-delivery .fn-commercial-list li.yqm.yqm_de input,
+.fn-commercial-commercial .fn-commercial-list li.yqm.yqm_de input {
+  opacity: .3;
+}
+.fn-commercial-delivery .fn-commercial-list li.yqm input,
+.fn-commercial-commercial .fn-commercial-list li.yqm input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fn-commercial-delivery .fn-commercial-list li.yqm span,
+.fn-commercial-commercial .fn-commercial-list li.yqm span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: .3rem;
+  height: .3rem;
+  border: 1px solid #999999;
+  margin-right: 0.15rem;
+  margin-left: .24rem;
+}
+.fn-commercial-delivery .fn-commercial-list li.yqm span.on,
+.fn-commercial-commercial .fn-commercial-list li.yqm span.on {
+  position: relative;
+  background: #D4103F;
+  border: none;
+}
+.fn-commercial-delivery .fn-commercial-list li.yqm span.on::after,
+.fn-commercial-commercial .fn-commercial-list li.yqm span.on::after {
+  content: '';
+  position: absolute;
+  top: .04rem;
+  left: .03rem;
+  display: block;
+  width: .18rem;
+  height: .12rem;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-bottom: #fff solid .04rem;
+  border-left: #fff solid .04rem;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-title,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-title {
+  margin-bottom: 0.3rem;
+  color: #666666;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-title span,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-title span {
+  font-size: 0.28rem;
+  color: #999;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: .24rem;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li {
+  margin-right: .2rem;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li > div,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li > div {
+  width: 2.1rem;
+  height: 1.51rem;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li .upload,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li .upload {
+  text-align: center;
+  background-color: #F2F2F2;
+  padding-top: .46rem;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li .upload p.iconfont,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li .upload p.iconfont {
+  margin-bottom: 0.14rem;
+  color: #D5D5D5;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li .upload p:last-child,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li .upload p:last-child {
+  font-size: .24rem;
+  color: #999;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li .edit,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li .edit {
+  position: relative;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li .edit img,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li .edit img {
+  width: 100%;
+  height: 100%;
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li .edit span,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li .edit span {
+  position: absolute;
+  height: .44rem;
+  padding: .08rem;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.fn-commercial-delivery .fn-commercial-pic .fn-commercial-pic-info ul li .store,
+.fn-commercial-commercial .fn-commercial-pic .fn-commercial-pic-info ul li .store {
+  text-align: center;
+  margin: .2rem 0 .3rem;
+  font-size: 0.24rem;
+}
+.fn-store-type .store-type {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.fn-store-type .store-type .choice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.88rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  padding: 0 .24rem;
+  color: #d7063b;
+}
+.fn-store-type .store-type .choice span {
+  font-size: 0.32rem;
+}
+.fn-store-type .store-type .detail_type {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: .1rem;
+  background-color: #fff;
+}
+.fn-store-type .store-type .detail_type .bus {
+  max-width: 2.7rem;
+  background-color: #fff;
+  text-align: center;
+  height: 5rem;
+  overflow: auto;
+}
+.fn-store-type .store-type .detail_type .bus h3 {
+  line-height: .7rem;
+  background-color: #f4f4f4;
+}
+.fn-store-type .store-type .detail_type .bus ul li {
+  width: 1.6rem;
+  max-width: 1.67rem;
+  line-height: .7rem;
+  margin-bottom: .04rem;
+  background-color: #f4f4f4;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.fn-store-type .store-type .detail_type .bus ul li.cur {
+  border-left: 0.06rem solid #D40F3F;
+  color: #D40F3F;
+  background-color: #fff;
+}
+.fn-store-type .store-type .detail_type .bus_detail {
+  margin-left: .4rem;
+  height: 5rem;
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fn-store-type .store-type .detail_type .bus_detail ul li {
+  position: relative;
+  padding-bottom: 0.06rem;
+}
+.fn-store-type .store-type .detail_type .bus_detail ul li:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+       -o-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e5e5e5;
+}
+.fn-store-type .store-type .detail_type .bus_detail ul li.on {
+  background-color: #e5e5e5;
+}
+.fn-store-type .store-type .detail_type .bus_detail ul li h4 {
+  margin: 0 0 0.18rem;
+  color: #333333;
+  font-size: 0.32rem;
+  padding-top: 0.2rem;
+}
+.fn-store-type .store-type .detail_type .bus_detail ul li p {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  color: #666666;
+}
+body {
+  background-color: #eee;
+}
+.top_box a {
+  position: absolute;
+  right: .2rem;
+  bottom: .18rem;
+  font-size: 0.32rem;
+  color: #666666;
+}
+.fn-commercial-commercial .fn-commercial-title {
+  font-size: .28rem!important;
+}
+.fn-commercial-commercial .fn-commercial-list li {
+  font-size: .28rem!important;
+}
+.fn-commercial-commercial .fn-commercial-list li p {
+  font-size: .28rem!important;
+}
+.fn-business-infor .fn-commercial-list li {
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+.fn-business-infor .fn-commercial-list li.edit p:nth-of-type(2) {
+  display: none;
+}
+.fn-business-infor .fn-commercial-list li.cancel input {
+  display: none;
+}
+.fn-business-infor .fn-commercial-list li p,
+.fn-business-infor .fn-commercial-list li input {
+  text-align: right;
+}
+.fn-business-infor .fn-commercial-list li:last-child:after {
+  height: 1px;
+}
+.fn-business-infor .fn-commercial-pic .fn-commercial-title {
+  margin-bottom: 0;
+}
+.fn-business-infor .fn-commercial-pic p:nth-child(1):after {
+  height: 0;
+}
+.btn_box {
+  height: 0.85rem;
+  margin: 0 .24rem;
+  text-align: center;
+  line-height: 0.85rem;
+  border-radius: .04rem;
+  margin-top: 0.3rem;
+}
+.btn_box a {
+  color: #fff;
+}
+.btn_box.btn_de {
+  background-color: #D4D5D6;
+}
+.btn_box.btn_red {
+  background-color: #D21140;
+}
+.d-bgc {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  background: #000;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+}
+.d-bpct {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  width: 280px;
+  background: #fff;
+  -webkit-transform: transLate(-50%, -50%);
+      -ms-transform: transLate(-50%, -50%);
+       -o-transform: transLate(-50%, -50%);
+          transform: transLate(-50%, -50%);
+}
+.d-bpct img {
+  width: 100%;
+  height: 100%;
+}
+.d-bpmm {
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  width: 300px;
+  margin-left: -150px;
+  background: #eee;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.d-bpmm h4 {
+  font: normal 14px/24px "microsoft yahei";
+}
+.d-bpmm li {
+  width: 100%;
+  padding-left: 15px;
+  line-height: 36px;
+  border-bottom: 1px solid #d5d5d5;
+}
+.d-bpmm li span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #adadad;
+  margin: 10px 10px 0 0;
+  display: block;
+  float: left;
+}
+.d-bpmm li.cur span i {
+  display: block;
+}
+.d-bpmm li span i {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #d7063b;
+  border-radius: 50%;
+  margin: 1px;
+  display: none;
+}
+.m-bt-btn {
+  width: 100%;
+  text-align: right;
+  height: 24px;
+  margin-top: 20px;
+}
+.m-bt-btn a {
+  color: #009788;
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 24px;
+}
